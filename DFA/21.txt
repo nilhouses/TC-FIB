@@ -1,0 +1,7 @@
+Múltiple de 3, 3 estats:
+
+	x0 = 2x
+	x1 = 2x+1
+
+
+	

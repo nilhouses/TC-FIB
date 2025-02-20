@@ -1,0 +1,7 @@
+Múltiple de 4, ara tinc 3 estats i la mateixa norma:
+
+	x0 = 2x
+	x1 = 2x+1
+
+ES INTERESSANT QUE L'ESTAT 3 NO EL TINC PERQUÈ ÉS EQUIVALENT A L'ESTAT 1, 
+TÉ LES MATEIXES TRANSICIONS.

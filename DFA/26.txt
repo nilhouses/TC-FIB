@@ -1,0 +1,9 @@
+Tota subcadena de longitud 3 ha de tenir exactament
+dues a's. Es pot mirar per casos, tenint en compte 
+3 caràcters (tenint en compte els 2 anteriors i el llegit).
+
+Es miren els casos 
+	
+	{ba,aa,ab}
+
+perque {bb} es rebutja (impossible arribar a dues a's en 3 caràcters).

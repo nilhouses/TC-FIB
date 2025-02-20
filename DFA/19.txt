@@ -1,0 +1,1 @@
+Busco b's consecutives amb alguna cadena amb menys de 2 a's
