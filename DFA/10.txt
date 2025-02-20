@@ -1,0 +1,9 @@
+Mirar partitats, però al principi:
+
+	longitud 1 = a,b
+	longitud 2 = 1a1b, 2a2b
+	longitud 3 = 2a1b, 1a2b
+
+després es va alternant entre els estats de longitud 2 i 3, però ara "seran
+tots de longitud 3", ja que busquem que tota paraula de llargada 3 compleix
+la propietat.

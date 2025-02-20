@@ -1,0 +1,16 @@
+DIFICILS
+
+10
+11
+12~13 potser també podrien ser considerats difícils
+14
+19
+21
+
+l'error aquí seria fer els problemes a saco sense mirar propietats. 
+Cal veure si el DFA que em donen és unió o intersecció d'altres DFA's 
+més petits. O si el negat és més facil que el que em donen.
+
+SEMBLANTS 
+	1-10
+	10-14

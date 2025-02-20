@@ -1,0 +1,18 @@
+A diferència del 10 i 11, que preguntaven per prefixos, el 12 pregunta 
+infixos. Ara tinc forma més "d'arbre" i no tant recursiva, Prenc totes
+les combinacions per a paraules de longitud 2 i a partir d'aquí, amb 
+el que m'entri puc considerar totes les paraules de longitud 3. Si la 
+paraula de longitud 3 no compleix la pemissa descarto el mot sencer, sino,
+prenc els 2 últims caràcters llegits i continuo.
+
+Ara, en només he de pensar en els 3 últims caràcters (els 2 anteriors 
+i el que acabo de llegir). 
+
+aaa - -> Descarto
+aab +
+aba + 
+abb - -> Descarto
+baa +
+bab - -> Descarto
+bba - -> Descarto
+bbb +

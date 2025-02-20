@@ -1,0 +1,5 @@
+Si desenvolupes el llenguatge es més fàcil de fer, sino costa, al 
+final necessites tenir totes les paraules de llargada 2 al mot 
+excepte aa. {ab,ba,bb}
+
+El que tocaria fer es pensar en quines paraules et queda per llegir en cada cas, no és tan complicat com havia dit

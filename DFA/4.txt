@@ -1,0 +1,3 @@
+FÀCIL, però l'ha repassat, fet a partir d'un NFA:
+
+- {1,a = 1}, {1,b = 1}, {1,a = 2}

@@ -1,0 +1,2 @@
+El mateix que el 12 (a primera vista) però en lloc de descartar 1a2b 
+cal descartar 1a1b, que en mots de llargada 3 és impossible, s'accepten tots.

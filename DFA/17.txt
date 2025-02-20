@@ -1,0 +1,2 @@
+Aquest es clarament l'intersecció de vàries propietats. Seguint 
+l'esquema que ens recomanen obtinc els 3 dfs

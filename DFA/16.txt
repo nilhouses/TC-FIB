@@ -1,0 +1,2 @@
+idèntic al 15 però amb un caràcter diferent, canvia alguna transició de 
+tornada als estats anteriors, però és fàcil.

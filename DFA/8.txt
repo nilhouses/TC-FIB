@@ -1,0 +1,2 @@
+Demostrar que mots amb b imparell concatenat amb mot començat amb a
+ (ell tinc a la llibreta).

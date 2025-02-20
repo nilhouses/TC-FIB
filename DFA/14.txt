@@ -1,0 +1,2 @@
+La condició de rebujar és no sol passar, es controla i la part complementària 
+s'accepta sempre.
