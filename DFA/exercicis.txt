@@ -15,11 +15,14 @@ més petits. O si el negat és més facil que el que em donen.
 SEMBLANTS 
 	1-9
 	10-14
-	15-16 ez
+	15-16 facil
 	17 interessant procediment
 	18 duplicar el DFA de 1
 	19 buscar el contraexemple 
 	20-25 múltiples
-	26-27 prefixos i sufixs amb diferència exactament 1
-
-vaig pel 28
+	26-27 prefixos amb diferència exactament 1
+	28 Sufix, es fa a partir del 27
+	29? per fer
+	30-32 semblants
+	33-35 diferencia 1 o més
+	36-39 una mica de tot

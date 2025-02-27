@@ -1,0 +1,3 @@
+Calcular 27 complementari i negar-lo. Després fer el 
+revers, que et retorna un NFA i has  de passar a DFA 
+i determinitzar....
