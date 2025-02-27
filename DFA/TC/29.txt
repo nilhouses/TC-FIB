@@ -1,2 +1,0 @@
-TOTS els mots del llenguatge hauràn de tenir els submots
-{ab,ba,bb}
