@@ -1,0 +1,16 @@
+	Non-ambiguous CFG for {aibj∣2i≤j}{aibj∣2i≤j}
+
+	S -> XY
+	X -> aXbb |
+	Y -> bY | 
+	
+	X garantitza l'igual i Y el major, per fer-ne més
+
+
+ILARIO
+
+	aibj 2i <= j
+
+	ai b(j-2i) b(2i)
+
+	{ai bn (bb)i | n Natural}

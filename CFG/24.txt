@@ -1,0 +1,6 @@
+	CFG for {w∈{a,b}∗∣∣w∣a=∣w∣b}{w∈{a,b}∗∣∣w∣a​=∣w∣b​} POT SER AMBIGU
+
+		Al principi pots pensar 
+			S ->  aSb | bSa | 
+		però no prèn el mot  "abba"
+

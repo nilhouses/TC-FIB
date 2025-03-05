@@ -1,0 +1,5 @@
+Non-ambiguous CFG for {w∈{a,b}∗∣w=wR}{w∈{a,b}∗∣w=wR}
+
+		No oblidar a i b soles
+
+		S -> aSa | bSb | a | b | 

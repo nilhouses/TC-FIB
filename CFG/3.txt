@@ -1,0 +1,19 @@
+Non-ambiguous CFG for {aibj∣i≥j}{aibj∣i≥j}
+
+	Aquí si et despistes tens una gramàtica ambigua. Necessites tenir una norma que et generi aSb i una altra 
+	que et generi aS. Si tens una sola norma se't fa ambigua la gramàtica, ja que pots fer aab com:
+		aA + aAb
+		aAb + aA 
+
+
+	SOL
+
+		S -> AB
+		A -> aA |
+		B -> aBb |
+
+	El que estas fent realment és afegir a's pel principi
+
+
+
+AQUEST ES EL PRIMER TRUC VIST PER DESAMBIGÜAR UNA GRAMÀTICA

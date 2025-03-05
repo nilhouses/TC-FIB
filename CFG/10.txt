@@ -1,0 +1,12 @@
+Non-ambiguous CFG for {aibjck∣i=j+k}{aibjck∣i=j+k}
+
+	Substituïm:
+	
+		a(j+k) b(j) c(k)
+		
+		a(k) a(j) b(j) c(k)
+
+	Si has substituït es treu molt ràpid_
+	
+		S -> aSc | X
+		X -> aXb |

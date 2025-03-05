@@ -1,0 +1,8 @@
+ Non-ambiguous CFG for {ancbn∣n>0}{ancbn∣n>0}
+
+	S -> aSb | acb
+
+Alternativament:
+
+	S -> aXb
+	X -> aXb | c

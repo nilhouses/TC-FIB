@@ -1,0 +1,3 @@
+Non-ambiguous CFG for {anbn∣n≥0}{anbn∣n≥0}
+
+	S -> aSb |
