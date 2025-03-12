@@ -1,4 +1,4 @@
-CFG for {aibj∣2i≥j}{aibj∣2i≥j}
+  CFG for {aibj∣2i≥j}{aibj∣2i≥j}
 Write a CFG generating the words of the form aibjaibj where the number of bb’s is at most twice the number of aa’s.
 
 
@@ -26,3 +26,7 @@ Write a CFG generating the words of the form aibjaibj where the number of bb’s
 			i >= k+1
 			ak
 			a a(k) a(i-k) (bb)k b
+
+S -> aTb | T
+T -> aTbb | aT |
+
