@@ -1,3 +1,23 @@
-semblant al 45
+CFG for {aibjck∣i=j∨j=k∨i=k}{aibjck∣i=j∨j=k∨i=k}
+Write a CFG (which will be ambiguous) generating the words of 
+the form aibjckaibjck where the number of aa’s equals the 
+number of bb’s, or the number of bb’s equals the number of 
+cc’s, or the number of cc’s equals the number of aa’s.
 
-PER FER
+La idea es tenir una norma que generi cada restricció i 
+una altra que m'afegeixi la lletra que falta. La 
+diferent es la Z, que cal que internament generi les b's.
+
+
+	S -> XC | AY | Z
+
+	X -> aXb |  
+	Y -> bYc | 
+	Z -> aZc | B
+
+
+	A -> aA| 
+	B -> bB |
+	C -> cC |
+
+
