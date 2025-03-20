@@ -16,3 +16,4 @@ Mateix que el 6 però ara no ambigu
 		S -> aSbb | T
 		T -> aT | ab |  
 
+EM COSTA BASTANT AQUEST (ja que el 6 no el recordo bé)
