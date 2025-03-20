@@ -1,0 +1,21 @@
+ Exercise ‹27›: CFG for {w∈{a,b}∗∣2∣w∣a=∣w∣b}{w∈{a,b}∗∣2∣w∣a​=∣w∣b​}
+Write a CFG generating the words over {a,b}{a,b} such that the number of occurrences of bb is twice the number of occurrences of aa.
+
+Ara necessito tenir 2b per cada b:
+
+
+	crides recursives:
+
+	bba
+	bab
+	abb
+
+	sense crida recursiva:
+	
+	lambda
+
+
+	
+
+
+
