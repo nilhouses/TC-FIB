@@ -1,0 +1,11 @@
+Molt semblant al 17 !
+
+Non-ambiguous CFG for {w∈{a,b}∗∣w=wR∧∣w∣a>0∧∣w∣b>0}{w∈{a,b}∗∣w=wR∧∣w∣a​>0∧∣w∣b​>0}
+Write a non-ambiguous CFG generating the palindromic words over {a,b}{a,b} with some occurrence of aa and some occurrence of bb
+
+
+	S -> aBa | bAb
+	A -> bAb | aTa | a 
+	B -> aBa | bTb | b
+
+	T -> aTa | bTb | a | b |

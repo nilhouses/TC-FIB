@@ -1,0 +1,32 @@
+
+CFG for the complement of {anbncn∣n≥0}{anbncn∣n≥0}
+Write a CFG (which will be ambiguous) generating the language of words over {a,b,c}{a,b,c} that are not of the form anbncnanbncn, where n≥0n≥0.
+
+
+Descartar els que ja no ho compleixen i mantenir la recursió pels que ho compleixen.
+
+Ordre equivocat:
+
+	ba
+	ca
+	cb
+ 
+Nombres que no son iguals:
+
+	al bm ck
+
+	YC	l != m
+	Z	k != l (l = m),  m != k esta en aquest cas
+
+
+	S -> XbaX | XcaX | XcbX | YC | Z
+
+	X -> aX | bX | cX |
+	Y -> aYb | aA | Bb
+	Z -> aZc | aAB | BCc
+
+	A -> aA |
+	B -> bB |
+	C -> cC |
+
+

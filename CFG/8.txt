@@ -1,1 +1,21 @@
+<<<<<<< HEAD
+ Exercise ‹8›: Non-ambiguous CFG for {aibj∣j≤i≤2j}{aibj∣j≤i≤2j}
+Write a non-ambiguous CFG generating the words of the form aibjaibj where the number of aa’s is at least the number of bb’s, but at most twice the number of bb’s.
+
+
+Per fer-ho puc veure com tinc 
+
+		
+	|b| >= |a|
+	|b| <= 2|a|
+
+El truc es tenir dues Variables que em generin les dues condicions tope i que 
+de la primera S, (que representa limit superior) pugui anar al primer pas (lambda) 
+o algun pas intermig a l'altra (que representa limit inferior).
+
+		S -> aaSb | X
+		X -> aXb | 
+
+=======
 Per fer, com el 7
+>>>>>>> 116b802b7095f339b80bb2bf430f6ced690a8a2f

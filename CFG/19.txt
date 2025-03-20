@@ -1,0 +1,13 @@
+Exercise ‹19›: Non-ambiguous CFG for {w∈{a,b}∗∣w=wR∧∣w∣aba>0}{w∈{a,b}∗∣w=wR∧∣w∣aba​>0}
+Write a non-ambiguous CFG generating the palindromic words over {a,b}{a,b} with some occurrence of abaaba.
+
+
+Com el 17 però "negat" cal tenir ocurrències de aba, no evitar-les
+
+
+	S -> aXa | bSb
+	X -> bYb | aXa | b
+	Y -> a | aTa | bSb
+
+	T -> aTa | bTb | b | a |
+

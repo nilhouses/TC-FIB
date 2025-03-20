@@ -1,3 +1,22 @@
+<<<<<<< HEAD
+CFG for {w∈{a,b}∗∣∣w∣a=∣w∣b}{w∈{a,b}∗∣∣w∣a​=∣w∣b​} POT SER AMBIGU
+
+		Al principi pots pensar 
+			S ->  aSb | bSa | 
+		però no prèn el mot  "abba", és molt més complex.
+
+		ILARIO
+		
+			S -> aXbS | bYaS |
+			X -> aXbX |
+			Y -> bYaY |	
+
+		JO (Ho he simplificat)
+
+			S -> aSbS | bSaS |
+
+
+=======
 	CFG for {w∈{a,b}∗∣∣w∣a=∣w∣b}{w∈{a,b}∗∣∣w∣a​=∣w∣b​} POT SER AMBIGU
 
 		Al principi pots pensar 
@@ -5,3 +24,4 @@
 		però no prèn el mot  "abba"
 
 PER ACABARRRR
+>>>>>>> 116b802b7095f339b80bb2bf430f6ced690a8a2f
