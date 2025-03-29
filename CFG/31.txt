@@ -1,0 +1,22 @@
+Non-ambiguous CFG for {w∈{a,b}∗∣2∣w∣a=∣w∣b}{w∈{a,b}∗∣2∣w∣a​=∣w∣b​}
+
+
+Ambigua:
+
+	S -> bSbSaS | bSaSbS | aSbSbS |
+
+Inambigua:
+
+	 Cal fer casos:
+	
+	bba bab abb
+
+
+// comença per a, comença per bb, comença per ba
+S -> aBBS | bAS | bXBS |
+//(B) Genera una b, si es llegeix una a caldrà generar 2 b's més
+B -> b | aBBB
+//(A) Genera ba
+A -> bX | bAA 
+//genera una a perquè s'han llegit dues b
+X -> a | bAX

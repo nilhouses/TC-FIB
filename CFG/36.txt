@@ -1,0 +1,10 @@
+Non-ambiguous CFG for {xcy∣x,y∈{a,b}∗∧yR suffix of x}{xcy∣x,y∈{a,b}∗∧yR suffix of x}
+
+Ara aquest es molt semblant a l'anterior. 
+Tinc un mot per l'esquerra raro fins a un punt X, 
+on generaré aXa i bXB | c
+
+
+	S -> aS | bS | X
+	X -> aXa | bXb | c
+
