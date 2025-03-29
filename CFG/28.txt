@@ -35,8 +35,8 @@ Write a non-ambiguous CFG generating the words over {a,b}{a,b} such that the num
 	S -> aSbS | bSaS | es convertirà en  S -> aAbS | bBaS | on:
 		
 
-		A genera sempre les a's abans que les b's
-		B genera sempre les b's després de les a's
+		A genera sempre les a's abans que les seves b's aparellades
+		B genera sempre les b's després de les seves a's aparellades
 
 	D'aquesta manera podem aparellar caràcters i seguim tenint la crida recursiva 
 	del final:
@@ -45,4 +45,4 @@ Write a non-ambiguous CFG generating the words over {a,b}{a,b} such that the num
 	 A -> aAbA | 
 	 B -> bBaB |
 	 
-	Em confón l'A del final i la B del final
+	
