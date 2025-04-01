@@ -1,10 +1,11 @@
 Non-ambiguous CFG for {xcy∣x,y∈{a,b}∗∧∣x∣=∣y∣∧∣x∣aa>0}{xcy∣x,y∈{a,b}∗∧∣x∣=∣y∣∧∣x∣aa​>0}
 
-S -> aAT | bST
-A -> aFT | bST
-F -> TFT | c
+S -> aXT | bST
+X -> aYT | bST
+Y -> TYT | c
 
 T -> a|b
 
-Si s'arriba a F s'han llegit dues as seguides
+X es una a
+Y es aa, ja es compleix la propietat
 
