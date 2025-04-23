@@ -1,5 +1,7 @@
 # TC-FIB
-This Repository contains some solved exercices (.png) and the thought process I used to solve them
+This repository contains exercises for the Computation Theory (TC) course at FIB-UPC.
+
+You will find solved exercices (.png) and the thought process I used to solve them
 (.txt), which is written in catalan. The exercices consist on the following formal language 
 generators:  
 
@@ -10,6 +12,5 @@ generators:
     K-Reductions (K)
     CFG-Reductions (CFG)
 
-All the exercises were obtained from:
+All the exercises were obtained from [RACSO](https://racso.lsi.upc.edu/juezwsgi/index)
 
-https://racso.lsi.upc.edu/juezwsgi/index
