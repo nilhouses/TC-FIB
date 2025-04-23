@@ -1,0 +1,14 @@
+COMENÇA A COMPLICAR-SE
+
+Mirar per casos, s'entén millor:
+
+    abb
+    bba
+    bab
+
+Aquests serien els base, i hauria de funcionar amb recursius:
+
+    ab, per exemple.
+
+La transició mer important la que hi ha entre B2 i A, per si de cas llegeixo BA, les transicions Z|Z també deleguen 
+els subproblemes a l'estat inicial i simplifiquen el probema general.
