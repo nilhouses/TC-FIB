@@ -1,0 +1,72 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[catalan]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{listings}
+\usepackage{parskip} % Separació de paràgrafs
+\usepackage[left=1.5cm, right=1.5cm, top=2cm, bottom=2cm]{geometry}
+
+\begin{document}
+
+\section*{\small 7.1.b) Classifica com decidible, semidecidible però no decidible, o no semidecidible el conjunt $ A = \{p \mid L_p \text{ és infinit} \} $}
+
+$\bullet$ \textbf{$A$ no és decidible ($A \notin R$)}
+
+Per demostrar-ho, podem reduir $K$ a $A$, ja que $K = \{\langle M,w\rangle \mid M(w)\downarrow\}$ és indecidible.
+
+Definim una funció computable i total $f(\langle M,w \rangle) = \langle M'\rangle$, tal que:
+\[
+M' = \left[
+\begin{array}{l}
+\text{input } t \{ \\
+\quad \text{if (M(w) stops in } t \text{ steps)} \\
+\quad\quad \text{accept;} \\
+\quad \text{else} \\
+\quad\quad \text{reject;} \\
+\}
+\end{array}
+\right.
+\]
+Veiem que:
+\begin{itemize}
+    \item $\langle M, w \rangle \in K \implies \exists t \text{ tq } M(w) \downarrow \text{ en } t \text{ passos} \implies L(M') = \{y \mid y \ge t\} \implies |L(M')| = \infty \implies \langle M' \rangle \in A$
+    \item $ \langle M, w \rangle \notin K \implies M(w) \uparrow \implies L(M') = \emptyset \implies |L(M')| = 0 \implies \langle M' \rangle \notin A$
+\end{itemize}
+Per tant:
+$$
+\langle M,w\rangle \in K \iff f(\langle M,w\rangle) \in A,
+$$
+$K \leq_m A$. Com que $K$ no és decidible, $A$ tampoc n'és.
+
+$\bullet$ \textbf{$A$ no és semidecidible ($A \notin RE$)}
+
+Per demostrar-ho, podem reduir $\overline{K}$ a $A$, ja que sabem que $\overline{K}$ no és semidecidible.
+
+Definim una funció computable i total $g(\langle M,w \rangle) = \langle M''\rangle$, tal que:
+\[
+M'' = \left[
+\begin{array}{l}
+\text{input } t \{ \\
+\quad \text{if (M(w) stops in } t \text{ steps)} \\
+\quad\quad \text{infinite loop;} \\
+\quad \text{else} \\
+\quad\quad \text{accept;} \\
+\}
+\end{array}
+\right.
+\]
+
+Veiem que:
+\begin{itemize}
+    \item $\langle M,w\rangle \in \overline{K} \implies M(w) \uparrow \implies  M'' \text{ accepta } \implies L(M'') = \Sigma^* \implies |L(M'')| = \infty \implies \langle M'' \rangle \in A$
+    \item $\langle M,w\rangle \notin \overline{K} \implies \exists t \text{ tq } M(w) \downarrow \text{ en } t \text{ passos} \implies L(M'') = \{y \mid y < t\} \implies |L(M'')| < \infty \implies \langle M'' \rangle \notin A$.
+\end{itemize}
+Per tant,
+$$
+\langle M,w\rangle \in \overline{K} \iff g(\langle M,w\rangle) \in A,
+$$
+$\overline{K} \leq_m A$. Com que $\overline{K}$ no és semidecidible, $A$ tampoc n'és.
+
+\end{document}
