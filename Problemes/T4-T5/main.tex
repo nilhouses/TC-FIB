@@ -1,0 +1,75 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[catalan]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{listings}
+\usepackage{parskip} % Separació de paràgrafs
+\usepackage[left=2.5cm, right=2.5cm, top=2cm, bottom=2cm]{geometry}
+\usepackage{graphicx} %imatge
+\usepackage{tcolorbox} %rectangle
+
+\begin{document}
+
+\begin{tcolorbox}
+\textbf{Lema de Bombament}
+
+Donat un llenguatge regular $L$, per tot mot $w \in L$ amb $|w| \geq N$, $w$ es pot descompondre com $w = xyz$ on:
+\begin{enumerate}
+    \item $|xy| \leq N$
+    \item $|y| \geq 1$
+    \item $\forall i \geq 0, xy^iz \in L$
+\end{enumerate}
+\end{tcolorbox}
+
+\section*{\small 5.3.b) Podem assegurar que $A\cup B$ és no-regular sabent que $A$ i $B$ són no-regulars?}
+
+No. Es pot comprovar amb el següent contraexemple:\\
+
+$\bullet$ $A = \{a^n b^n \mid n \geq 0\}$ és no-regular \\
+Demostrem-ho per reducció a l'absurd, suposem $A$ regular, $A$ ha de complir el lema de bombament:
+
+Donat $N \geq 1$, prenem $w = a^Nb^N \in L$, $|w| \geq N$, si descomponem $a^Nb^N$ en $xyz$:
+
+Cal que:
+\begin{align*}
+  |xy| &\leq N \\
+  |y| &\geq 1
+\end{align*}
+
+Tenim:
+\begin{align*}
+  x &= a^j \\
+  y &= a^k \\
+  z &= a^{N-j-k}b^N
+\end{align*}
+Amb:
+\begin{align*}
+  k &\geq 1 \\
+  1 &< j + k \leq N
+\end{align*}
+
+Si bombejem $w$:
+\begin{itemize}
+\item $i = 1$
+\subitem $w = xy^1z = a^j a^k a^{N-j-k}b^N = a^Nb^N \in A$, evidentment.
+\end{itemize}
+
+\begin{itemize}
+\item $i = 2$
+\subitem $w = xy^2z = a^j a^k a^k a^{N-j-k}b^N = a^{N+k}b^N \notin A \rightarrow \text{contradicció amb el lema de bombament}$\\
+\end{itemize}
+$\bullet$ $B = \overline A = \{w \in \{a,b\}^* \mid w \neq a^n b^n, \forall n \geq 0\}$ és no-regular
+
+Reducció a l'absurd, suposem $B$ regular:\\
+\\
+$B \text{ és regular} \implies \overline{B} = A \text{ és regular} \rightarrow \text{contradicció amb la demostració anterior}$\\
+\\
+$\bullet$ $A\cup B = A \cup \overline A = \Sigma^*$ és regular, ja que es pot representar amb un DFA d'un únic estat acceptador:
+
+\begin{center} 
+\includegraphics{DFA.png} 
+\end{center} 
+
+\end{document}
