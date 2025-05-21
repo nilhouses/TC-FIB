@@ -7,14 +7,16 @@
 \usepackage{listings}
 \usepackage{parskip} % Separació de paràgrafs
 \usepackage[left=1.5cm, right=1.5cm, top=2cm, bottom=2cm]{geometry}
+\usepackage[dvipsnames]{xcolor} % Colors
 
 \begin{document}
 
 \section*{\small 7.1.b) Classifica com decidible, semidecidible però no decidible, o no semidecidible el conjunt $ A = \{p \mid L_p \text{ és infinit} \} $}
+\vspace{1em}
 
 $\bullet$ \textbf{$A$ no és decidible ($A \notin R$)}
 
-Per demostrar-ho, podem reduir $K$ a $A$, ja que $K = \{\langle M,w\rangle \mid M(w)\downarrow\}$ és indecidible.
+Per demostrar-ho, podem reduir $HALT$ a $A$, ja que $HALT= \{\langle M,w\rangle \mid M(w)\downarrow\}$ és indecidible.
 
 Definim una funció computable i total $f(\langle M,w \rangle) = \langle M'\rangle$, tal que:
 \[
@@ -31,18 +33,21 @@ M' = \left[
 \]
 Veiem que:
 \begin{itemize}
-    \item $\langle M, w \rangle \in K \implies \exists t \text{ tq } M(w) \downarrow \text{ en } t \text{ passos} \implies L(M') = \{y \mid y \ge t\} \implies |L(M')| = \infty \implies \langle M' \rangle \in A$
-    \item $ \langle M, w \rangle \notin K \implies M(w) \uparrow \implies L(M') = \emptyset \implies |L(M')| = 0 \implies \langle M' \rangle \notin A$
+    \item $\langle M, w \rangle \in HALT \implies \exists t \text{ tq } M(w) \downarrow \text{ en } t \text{ passos} \implies L(M') = \{y \mid y \ge t\} \implies |L(M')| = \infty \implies \langle M' \rangle \in A$
+    \item $ \langle M, w \rangle \notin HALT \implies M(w) \uparrow \implies L(M') = \emptyset \implies |L(M')| = 0 \implies \langle M' \rangle \notin A$
 \end{itemize}
 Per tant:
 $$
-\langle M,w\rangle \in K \iff f(\langle M,w\rangle) \in A,
+\langle M,w\rangle \in HALT \iff f(\langle M,w\rangle) \in A,
 $$
-$K \leq_m A$. Com que $K$ no és decidible, $A$ tampoc n'és.
+$HALT \leq_m A$. Com que $HALT$ no és decidible, $A$ tampoc n'és.
+
+\vspace{1em}
+\vspace{1em}
 
 $\bullet$ \textbf{$A$ no és semidecidible ($A \notin RE$)}
 
-Per demostrar-ho, podem reduir $\overline{K}$ a $A$, ja que sabem que $\overline{K}$ no és semidecidible.
+Per demostrar-ho, podem reduir $\overline{HALT}$ a $A$, ja que sabem que $\overline{HALT}$ no és semidecidible.
 
 Definim una funció computable i total $g(\langle M,w \rangle) = \langle M''\rangle$, tal que:
 \[
@@ -60,13 +65,18 @@ M'' = \left[
 
 Veiem que:
 \begin{itemize}
-    \item $\langle M,w\rangle \in \overline{K} \implies M(w) \uparrow \implies  M'' \text{ accepta } \implies L(M'') = \Sigma^* \implies |L(M'')| = \infty \implies \langle M'' \rangle \in A$
-    \item $\langle M,w\rangle \notin \overline{K} \implies \exists t \text{ tq } M(w) \downarrow \text{ en } t \text{ passos} \implies L(M'') = \{y \mid y < t\} \implies |L(M'')| < \infty \implies \langle M'' \rangle \notin A$.
+    \item $\langle M,w\rangle \in \overline{HALT} \implies M(w) \uparrow \implies  M'' \text{ accepta } \implies L(M'') = \Sigma^* \implies |L(M'')| = \infty \implies \langle M'' \rangle \in A$
+    \item $\langle M,w\rangle \notin \overline{HALT} \implies \exists t \text{ tq } M(w) \downarrow \text{ en } t \text{ passos} \implies L(M'') = \{y \mid y < t\} \implies |L(M'')| < \infty \implies \langle M'' \rangle \notin A$.
 \end{itemize}
 Per tant,
 $$
-\langle M,w\rangle \in \overline{K} \iff g(\langle M,w\rangle) \in A,
+\langle M,w\rangle \in \overline{HALT} \iff g(\langle M,w\rangle) \in A,
 $$
-$\overline{K} \leq_m A$. Com que $\overline{K}$ no és semidecidible, $A$ tampoc n'és.
+$\overline{HALT} \leq_m A$. Com que $\overline{HALT}$ no és semidecidible, $A$ tampoc n'és.
+\vspace{1em}
+\vspace{1em}
+\vspace{1em}
+
+\textcolor{OliveGreen}{\textit{\textbf{Noteu que es podria haver demostrat directament la no-semidecibilitat d'$A$.}}}
 
 \end{document}
