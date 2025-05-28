@@ -1,5 +1,19 @@
-# Reduccions a K
+# Expressions regulars
 
+Tipus d'exercicis:
+
+Normals : Definir variables i completar 
+Múltiples : Es solen fer amb dfa's, però fer també pots fer
+        
+    m4 = ("0"|"1")* "00" | "" | "0";
+
+Per tenir múltiples de 4, per exemple.
+
+Morfismes : Substitution
+
+NFA : DFA amb símbols que representen el mateix símbol. Acabarem fent morfisme del simbol pel símbol que representa.
+
+Alguns et demanen camins de un node a un altre i has de fer cicles intermitjos.
 
 ## Exercise 1
 
@@ -109,56 +123,4 @@
 
 ---
 
-## Exercise 19
-
-![Exercise 19](./PNG/19.png)
-
----
-
-## Exercise 20
-
-![Exercise 20](./PNG/20.png)
-
----
-
-## Exercise 21
-
-![Exercise 21](./PNG/21.png)
-
----
-
-## Exercise 22
-
-![Exercise 22](./PNG/22.png)
-
----
-
-## Exercise 23
-
-![Exercise 23](./PNG/23.png)
-
----
-
-## Exercise 24
-
-![Exercise 24](./PNG/24.png)
-
----
-
-## Exercise 25
-
-![Exercise 25](./PNG/25.png)
-
----
-
-## Exercise 26
-
-![Exercise 26](./PNG/26.png)
-
----
-
-## Exercise 27
-
-![Exercise 27](./PNG/27.png)
-
----
+<!-- to finish -->
