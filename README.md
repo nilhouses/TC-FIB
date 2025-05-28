@@ -1,4 +1,5 @@
 # TC-FIB
+Problemes del RACSO i de pissarra de Teoria de la Computació a la FIB.
 
 This repository contains exercises for the Computation Theory (TC) course at FIB-UPC.
 
@@ -11,6 +12,6 @@ You will find solved exercises (.png) along with the thought process I followed 
 - Pushdown Automata (PDA)  
 - Karp Reductions (K)  
 - Word Problem Reductions (WP)  
-- CFG Reductions (CFG)  
+<!--- CFG Reductions (CFG)-->  
 
 All exercises were obtained from [RACSO](https://racso.lsi.upc.edu/juezwsgi/index).
