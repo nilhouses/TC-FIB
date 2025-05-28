@@ -1,2 +1,0 @@
-Demostrar que mots amb b imparell concatenat amb mot començat amb a
- (el tinc a la llibreta).

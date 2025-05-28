@@ -1,2 +1,0 @@
-Mots que es poden dividir d'alguna manera amb el mateix nombre 
-d'as i als dos llocs. És a dir, nombre d'as parell

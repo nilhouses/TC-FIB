@@ -1,8 +1,0 @@
-Cal comptar, els DFAs no poden comptar, però puc tenir constància 
-de la diferència. al final he definit una funció f:
-
-f(0) = f(1) = 0
-
-f(i) = |w[1]...w[i]|ab - |w[1]...w[i]|ba
-
-Ela tinc a la llibreta, ab suma aa resta, la resta ho deixen igual

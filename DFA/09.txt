@@ -1,3 +1,0 @@
-Aquí he comès l'error de no posar l'estat pou.
-
-S'acceptaria "abab" on la segona a no compleix la propietat

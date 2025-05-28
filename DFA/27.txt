@@ -1,4 +1,0 @@
-Tot prefix imparell ha de tenir exactament 1 b més 
-que a's. Això es fer bucle de {ba,ba,ba,}, però
-també pot ser bucle {bbaa, bbabaa}. El primer 
-bucle és fàcil, és el segon que complica el problema.

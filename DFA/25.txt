@@ -1,8 +1,0 @@
-Múltiples de 5, aquí s'usen tots els estats, 
-a diferència dels múltiples de 4.
-RECORDA:
-	
-	x0 = 2x
-	x1 = 2x+1
-
-

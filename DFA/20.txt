@@ -1,2 +1,0 @@
-Múltiples de 2 (acabats en 0) i mot buit 
-	2 estats i ja està

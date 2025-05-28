@@ -1,2 +1,0 @@
-Trobar paraules amb {ab,ba i bb}. Es pot fer de cap 
-pensant bé cada estat.

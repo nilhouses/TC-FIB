@@ -1,8 +1,0 @@
-Aquest es clarament l'intersecció de varis DFA's.
-Seguint l'esquema que ens recomanen obtinc els 3 
-dfa i en calculo l'interseccio. Tinc al onenote 
-el procediment.
-
-Però si hi penses bé son 4*4*4 = 64 estats en total :(
-
-de totes maneres evitant varis pous acabes amb 8 estats, que ja són mínims
