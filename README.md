@@ -12,6 +12,8 @@ You will find solved exercises (.png) along with the thought process I followed 
 - Pushdown Automata (PDA)  
 - Karp Reductions (K)  
 - Word Problem Reductions (WP)  
-<!--- CFG Reductions (CFG)-->  
+<!--- CFG Reductions (CFG) Incompletes però estàn al racso, 
+
+    gthumb va molt bé per retallar fotos a ubuntu -->  
 
 All exercises were obtained from [RACSO](https://racso.lsi.upc.edu/juezwsgi/index).
