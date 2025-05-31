@@ -29,7 +29,7 @@ main
   output all word all;     
 }
 ```
----
+
 
 ## Exercise 2
 
@@ -48,8 +48,8 @@ main
   output L1 & L2 & L3 & L4;
 }
 ```
----
----
+
+
 
 ## Exercise 3
 
@@ -68,19 +68,16 @@ main
  output L1 & L2;
 }
 ```
-```comment
+
+
 Fàcil oblidar el segon cas d'L1
-
-```
----
-
 ## Exercise 4
 
 ![Exercise 4](./PNG/04.png)
 ```text
 
 ```
----
+
 
 ## Exercise 5
 
@@ -88,7 +85,7 @@ Fàcil oblidar el segon cas d'L1
 ```text
 
 ```
----
+
 
 ## Exercise 6
 
@@ -96,7 +93,7 @@ Fàcil oblidar el segon cas d'L1
 ```text
 
 ```
----
+
 
 ## Exercise 7
 
@@ -104,7 +101,7 @@ Fàcil oblidar el segon cas d'L1
 ```text
 
 ```
----
+
 
 ## Exercise 8
 
@@ -112,7 +109,7 @@ Fàcil oblidar el segon cas d'L1
 ```text
 
 ```
----
+
 
 ## Exercise 9
 
@@ -120,7 +117,7 @@ Fàcil oblidar el segon cas d'L1
 ```text
 
 ```
----
+
 
 ## Exercise 10
 
@@ -128,7 +125,7 @@ Fàcil oblidar el segon cas d'L1
 ```text
 
 ```
----
+
 
 ## Exercise 11
 
@@ -136,7 +133,7 @@ Fàcil oblidar el segon cas d'L1
 ```text
 
 ```
----
+
 
 ## Exercise 12
 
@@ -144,7 +141,7 @@ Fàcil oblidar el segon cas d'L1
 ```text
 
 ```
----
+
 
 ## Exercise 13
 
@@ -152,7 +149,7 @@ Fàcil oblidar el segon cas d'L1
 ```text
 
 ```
----
+
 
 ## Exercise 14
 
@@ -160,7 +157,7 @@ Fàcil oblidar el segon cas d'L1
 ```text
 
 ```
----
+
 
 ## Exercise 15
 
@@ -168,7 +165,7 @@ Fàcil oblidar el segon cas d'L1
 ```text
 
 ```
----
+
 
 ## Exercise 16
 
@@ -176,7 +173,7 @@ Fàcil oblidar el segon cas d'L1
 ```text
 
 ```
----
+
 
 ## Exercise 17
 
@@ -184,7 +181,7 @@ Fàcil oblidar el segon cas d'L1
 ```text
 
 ```
----
+
 
 ## Exercise 18
 
@@ -192,6 +189,6 @@ Fàcil oblidar el segon cas d'L1
 ```text
 
 ```
----
+
 
 <!-- to finish -->
