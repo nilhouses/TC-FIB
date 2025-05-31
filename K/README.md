@@ -1,5 +1,5 @@
 # K-Reductions
-<!-- 
+<!-- Alguns caràcters 
   EXISTS       -> ∃ 
   FORALL       -> ∀ 
   PHI          -> φ
@@ -62,9 +62,9 @@ input y
 ```
 ```text
 
- Si x ∈ !K llavors la màquina mai para
+ Si x ∈ !K, llavors la màquina mai para
 
- Si x ∈ K (és a dir, x ∈ K) llavors la màquina sempre para
+ Si x ∈ K, llavors la màquina sempre para
 
 ```
 ---
@@ -274,9 +274,9 @@ input y
 ```
 ```text
 
- Si x ∈ !K la maquina té imatge {0,1}, |Im(φp​)| = 2
+ Si x ∈ !K la màquina té imatge {0,1}, |Im(φp​)| = 2
 
- Si x ∈ K la maquina té d'imatge ℕ, |Im(φp​)| = ∞
+ Si x ∈ K la màquina té d'imatge ℕ, |Im(φp​)| = ∞
 
 ```
 ---
@@ -296,13 +296,13 @@ input y
 ```text
 Els parells i imparells tenen bastant sentit quan  es demanen conjunts infinits sense intersecció:
 
- Si x ∈ !K la maquina té ∣Dom(φp​)∣ = ∞, ∣Im(φp​)∣ = ∞ i Dom(φp​) ∩ Im(φp​) = ∅, ja que:
+ Si x ∈ !K la màquina té ∣Dom(φp​)∣ = ∞, ∣Im(φp​)∣ = ∞ i Dom(φp​) ∩ Im(φp​) = ∅, ja que:
 
     - Dom(φp​) = {x | x ∈ ℕ ∧ x % 2 = 0}
     - Im(φp​) = {x | x ∈ ℕ ∧ x % 2 = 1}
     
 
- Si x ∈ K la maquina té ∣Dom(φp​)∣ = ∞, ∣Im(φp​)∣ = ∞ i Dom(φp​) ∩ Im(φp​) = ∞, ja que:
+ Si x ∈ K la màquina té ∣Dom(φp​)∣ = ∞, ∣Im(φp​)∣ = ∞ i Dom(φp​) ∩ Im(φp​) = ∞, ja que:
 
     - Dom(φp​) = Im(φp​) = {x | x ∈ ℕ }
 
@@ -329,7 +329,7 @@ input y
 
  Si x ∈ K les maquines paren, (∃x perquè es compleix ∀x)
 
- Si x ∈ !K la maquina p no para (!∃x)
+ Si x ∈ !K la màquina p no para (!∃x)
 
 ```
 ---
@@ -354,7 +354,7 @@ input y
 
  Si x ∈ K les maquines paren, (∃x perquè es compleix ∀x)
 
- Si x ∈ !K la maquina q no para (!∃x)
+ Si x ∈ !K la màquina q no para (!∃x)
 
 ```
 ---
@@ -410,7 +410,7 @@ input y
 ```
 ```text
 
- Si x ∈ K, les maquines tenen ℕ com a domini ⇒ |Dom(φp​) ∩ Dom(φq​)| >=2
+ Si x ∈ K, les maquines tenen ℕ com a domini ⇒ |Dom(φp​) ∩ Dom(φq​)| >= 2
 
  Si x ∈ !K, les maquines tenen en comú {0} ⇒ |Dom(φp​) ∩ Dom(φq​)| = 1
 
@@ -476,7 +476,6 @@ Si x ∈ K, tenim:
 
 - Dom(φp​) = Dom(φq​) = ℕ  ⇒ |Dom(φp​)| = |Dom(φq​)| = ∞
 
-
 ```
 ---
 
@@ -538,7 +537,7 @@ input y
 ```
 ```text
 
-Si x ∈ !K, tenim:
+ Si x ∈ !K, tenim:
   - Dom(φp) = {0}
   - Im(φp) = {1}
   - Dom(φq) = {1}
@@ -547,7 +546,7 @@ Si x ∈ !K, tenim:
   - ∣Dom(φp)∣ = ∣Im(φp)∣ = ∣Dom(φq)∣ = ∣Im(φq)∣ = 1
   - ∣Dom(φp) ∪ Dom(φq) ∪ Im(φp) ∪ Im(φq)∣ = 3
 
-Si x ∈ K, tenim:
+ Si x ∈ K, tenim:
   - Dom(φp) = Dom(φq) = ℕ
   - Im(φp) = {1}
   - Im(φq) = {1,2}
@@ -581,7 +580,7 @@ input y
 ```
 ```text
 
-Si x ∈ !K, tenim:
+ Si x ∈ !K, tenim:
   - Dom(φp) = {0}
   - Im(φp) = {1}
   - Dom(φq) = {2}
@@ -590,7 +589,7 @@ Si x ∈ !K, tenim:
   - ∣Dom(φp)∣ = ∣Im(φp)∣ = ∣Dom(φq)∣ = ∣Im(φq)∣ = 1
   - ∣Dom(φp) ∪ Dom(φq) ∪ Im(φp) ∪ Im(φq)∣ = 4
 
-Si x ∈ K, tenim:
+ Si x ∈ K, tenim:
   - Dom(φp) = Dom(φq) = ℕ
   - Im(φp) = {1}
   - Im(φq) = {1,3}
@@ -606,12 +605,31 @@ Si x ∈ K, tenim:
 ![Exercise 23](./PNG/23.png)
 ```text
 
+input y
+{
+  if (y == 0) output y;
+  runmxx;
+  output y;
+}
 
+input y
+{
+  if (y == 0) output y;
+  runmxx;
+  if (y == 1) output y;
+  reject;
+}
 
 ```
 ```text
 
+ Si x ∈ !K, tenim:
+  - Dom(φp) = Dom(φq) = {0} ⇒ Dom(φp​)⊆ Dom(φq​)
 
+ Si x ∈ K, tenim:
+
+  - Dom(φp) = ℕ
+  - Dom(φq) = {0,1}  ⇒ Dom(φp​)⊈ Dom(φq​)
 
 ```
 ---
@@ -621,12 +639,30 @@ Si x ∈ K, tenim:
 ![Exercise 24](./PNG/24.png)
 ```text
 
+input y
+{
+  if (y == 0) output y;
+  runmxx;
+  output y;
+}
 
+input y
+{
+  if (y == 0 or y == 1) output y;
+  runmxx;
+  reject;
+}
 
 ```
 ```text
 
+ Si x ∈ !K, tenim:
+  - Dom(φp) =  {0}
+  - Dom(φq​) = {0,1} ⇒ Dom(φp)⊂ Dom(φq)
 
+ Si x ∈ K, tenim:
+  - Dom(φp) =  ℕ
+  - Dom(φq​) = {0,1} ⇒ Dom(φp)⊄ Dom(φq)
 
 ```
 ---
@@ -636,12 +672,35 @@ Si x ∈ K, tenim:
 ![Exercise 25](./PNG/25.png)
 ```text
 
-
+input y
+{
+  if (y == 0 or y == 1) reject;
+  output y - 2;
+}
+ 
+input y
+{
+  if (y == 0) {
+    runmxx;
+    output y;
+  }
+  output y;
+}
 
 ```
 ```text
 
+ Si x ∈ !K, tenim:
+  - Dom(φp) = {2,...∞}
+  - Dom(φq) = {1,...∞}
+  - Im(φp) = {0,...∞}
+  Veiem, doncs, com Dom(φp) ⊂ Dom(φq) ⊂ Im(φp), ja que {2,...∞} ⊂ {1,...∞} ⊂ {0,...∞}
 
+ Si x ∈ K, tenim:
+  - Dom(φp) = {2,...∞}
+  - Dom(φq) = {0,...∞}
+  - Im(φp) = {0,...∞}
+  Veiem, doncs, com Dom(φp) ⊂ Dom(φq) ⊄ Im(φp), ja que {2,...∞} ⊂ {0,...∞} ⊄ {0,...∞}
 
 ```
 ---
@@ -651,12 +710,31 @@ Si x ∈ K, tenim:
 ![Exercise 26](./PNG/26.png)
 ```text
 
+input y
+{
+  if (y % 2 == 0) runmxx;
+  output y;
+}
 
+input y
+{
+  if (y % 2 != 0) runmxx;
+  output y;
+}
 
 ```
 ```text
 
+ Si x ∈ !K, tenim: 
+ - Dom(φp) = {x | x ∈ ℕ ∧ x % 2 = 1} ⇒ ∣Dom(φp​)∣ = ∞
+ - Dom(φq) = {x | x ∈ ℕ ∧ x % 2 = 0} ⇒ ∣Dom(φq​)∣ = ∞
+ Veiem, doncs, que:
+  Dom(φp​) ∩ Dom(φq​) = ∅
 
+ Si x ∈ K, tenim:
+  - Dom(φp) = Dom(φq) = ℕ ⇒ ∣Dom(φp​)∣ = ∣Dom(φp​)| = ∞
+ Veiem, doncs, que:
+  Dom(φp​)∩ Dom(φq​) = ℕ
 
 ```
 ---
@@ -666,12 +744,28 @@ Si x ∈ K, tenim:
 ![Exercise 27](./PNG/27.png)
 ```text
 
+input y
+{
+  if (mxxstopsininputsteps) reject;
+  if (y % 2 == 0) output y;
+}
 
+input y
+{
+  if (y % 2 != 0 and y != 1) output y;
+}
 
 ```
 ```text
+Si x ∈ !K, tenim: 
+ - Dom(φp) = {x | x ∈ ℕ ∧ x % 2 = 0} 
+ - Dom(φq) = {x | x ∈ ℕ ∧ x % 2 = 1 ∧ x > 1}
+ És a dir:
+  Dom(φp) = {0,2,4,6,...} 
+  Dom(φq) = {3,5,7,...}
+Per a qualsevol nombre natural y, si considerem la llista {0, ..., y}, sempre hi haurà com a mínim un element més a Dom(φp) que a Dom(φq). Això és perquè Dom(φp) inclou tots els parells començant pel 0, mentre que Dom(φq) només inclou els senars estrictament majors que 1 (és a dir, a partir de 3). Per tant, dins de qualsevol interval finit, Dom(φp) sempre tindrà més elements que Dom(φq).
 
-
+ Si x ∈ K, tenim Dom(φp) = ∅ ⇒ ∣Dom(φp​)∣ = 0
 
 ```
 ---

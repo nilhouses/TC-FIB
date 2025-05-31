@@ -1,18 +1,29 @@
-- DFA 
-    - Afegir comentaris   
-- CFG 
-    - Fotos + text + Comentaris
+|||||||||||||ESTUDI|||||||||||||||||||||
+    
+
 - RegExpr
-    - Fotos + text + Comentaris
+    - Fotos + text + Comentaris (Mateix format que K-Reduccions)
 - PDA
-    - Fotos + Comentaris
+    - Fotos + Comentaris (Mateix format que DFA)
 
-Reduccions
-
-- K 
-    - Fotos + text + Comentaris
 - WP
     - Fotos + text + Comentaris
 
+ALGUN EXÀMEN
+
+<!-- PUBLICAR REPO
+
+ES PODRIA PENJAR ALGUNS EXÀMENS DELS QUE TINC, AMB/SENSE COMENTARIS -->
+||||||||||||||PARCIAL 1|||||||||||||||||||||
+<!-- - DFA 
+    - Afegir comentaris a les solucions (README) abans de fer repo públic  -->
+<!-- - CFG 
+    - Fotos + text + Comentaris (Mateix format que K-Reduccions) -->  <- Cal actualització heavy, després d'exàmens
+|||||||||||||PARCIAL 2|||||||||||||||||||||
+    <!-- - K 
+    - Repassar abans de fer repo public -->
+||||||||||||||EXTRA|||||||||||||||||||||||||
+<!-- 
 - CFG
     - Fotos + text + Comentaris
+- Assignacions problemes Latex -->
