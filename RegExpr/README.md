@@ -75,15 +75,33 @@ Fàcil oblidar el segon cas d'L1
 
 ![Exercise 4](./PNG/04.png)
 ```text
+main
+{ 
+ a = "a";
+ b = "b";
 
+ all = ("a" | "b")*;
+  
+ L1 = all "aba" all - (all "aba" all "aba" all) - (all "ababa" all);
+ L2 = substitution(L1, "b" -> "a", "a" -> "b");
+ 
+ output L1 & L2;
+}
 ```
-
+Mateixa idea que el 3
 
 ## Exercise 5
 
 ![Exercise 5](./PNG/05.png)
 ```text
-
+main
+{
+  t = ("a" | "b");
+  all = ("a" | "b")*;
+  L1 = all "a" t t t t t;
+  L2 = all "bbb" all;
+  output L1 & L2;
+}
 ```
 
 
@@ -91,7 +109,28 @@ Fàcil oblidar el segon cas d'L1
 
 ![Exercise 6](./PNG/06.png)
 ```text
+main
+{
+ m3 = "  0 1
+       0 0 1 +
+       1 2 0
+       2 1 2";
+  
+ m4 = "  0 1
+       0 0 1 +
+       1 2 1
+       2 0 1";
 
+  output m3 & m4;
+}
+```
+
+Els múltiples de 12 també són múltiples de 3 i de 4, ja que 12 es pot descompondre en factors primers (12 = 3 × 4). 
+
+En lloc d'un DFA, es podria construir una expressió regular, com per exemple:
+
+```text
+  m4 = ("0"|"1")* "00" | "" | "0";
 ```
 
 
@@ -99,23 +138,77 @@ Fàcil oblidar el segon cas d'L1
 
 ![Exercise 7](./PNG/07.png)
 ```text
-
+main
+{
+ 
+ m4 = "  0 1
+       0 0 1 +
+       1 2 1
+       2 0 1";
+  
+ m5 = "  0 1
+       0 0 1 +
+       1 2 3
+       2 4 0
+       3 1 2
+       4 3 4";
+    
+  output m4 & m5;
+}
 ```
 
 
 ## Exercise 8
 
 ![Exercise 8](./PNG/08.png)
+
+  ```
+  60 | 2
+  30 | 2
+  15 | 3
+   5 | 5
+   1
+ 
+  60 = 4 x 3 x 5
+  ```
+
 ```text
-
+main
+{ 
+ m3 = "  0 1
+       0 0 1 +
+       1 2 0
+       2 1 2";
+  
+ m4 = "  0 1
+       0 0 1 +
+       1 2 1
+       2 0 1";
+ m5 = "  0 1
+       0 0 1 +
+       1 2 3
+       2 4 0
+       3 1 2
+       4 3 4";
+    
+  output m3 & m4 & m5;
+}
 ```
-
 
 ## Exercise 9
 
 ![Exercise 9](./PNG/09.png)
 ```text
-
+main
+{
+  a = "a";
+  b = "b";
+  t = a | b;
+  all = (a|b)*;
+  
+  L = all a  t t;
+  output substitution(L, "a" -> "aba", "b" -> "bab"); 
+}
 ```
 
 
@@ -123,7 +216,20 @@ Fàcil oblidar el segon cas d'L1
 
 ![Exercise 10](./PNG/10.png)
 ```text
-
+main
+{
+  a = "a";
+  b = "b";
+  c = "c";
+  t = a | b | c;
+  all = (a|b|c)*;
+  
+  L1 = (all a t);
+  L2 = (all c t);
+  L = L1 | L2;
+  
+  output substitution(L, "a" -> "aba", "b" -> "aa", "c" -> "b"); 
+}
 ```
 
 
@@ -131,7 +237,14 @@ Fàcil oblidar el segon cas d'L1
 
 ![Exercise 11](./PNG/11.png)
 ```text
-
+main
+{
+  a = "a";
+  b = "b";
+  ab = a | b;
+  l = ab* a ab ab;
+  output substitution(l, "a" -> (a a)*, "b" -> (a | a b a | b a b));
+}
 ```
 
 
@@ -139,31 +252,106 @@ Fàcil oblidar el segon cas d'L1
 
 ![Exercise 12](./PNG/12.png)
 ```text
-
+main
+{
+  
+  dfa = " a b c d
+  	0 3 4 1 p
+	1 4 2 p 3
+	2 p 5 p p
+	3 2 p p p
+	4 0 0 5 2 +
+	5 4 p p p
+	p p p p p";
+  
+  output substitution(dfa, "c" -> "a", "d" -> "b");
+}
 ```
+
+  La idea és representar el DFA utilitzant morfismes. Primer es construeix el DFA amb altres símbols (com c i d) que representen les transicions dels símbols a i b, incloent-hi les transicions no definides.
+
 
 
 ## Exercise 13
 
 ![Exercise 13](./PNG/13.png)
 ```text
+main
+{
+  dfa =  "a b c d
+  	2 p 5 p p
+	0 1 4 3 p
+	1 4 2 p 3
+	3 2 p p p
+	4 0 0 5 2 +
+	5 4 p p p
+	p p p p p";
 
+  dfa2 =  "a b c d
+  	 5 4 p p p
+	 0 1 4 3 p
+	 1 4 2 p 3
+	 2 p 5 p p
+	 3 2 p p p
+	 4 0 0 5 2 +
+	 p p p p p";
+  
+  dfa = substitution(dfa, "c"->"a", "d" -> "b");
+  dfa2 = substitution(dfa2, "c"->"a", "d" -> "b");
+  
+ output dfa | dfa2;
+}
 ```
-
+Per representar dos estats inicials es pot fer un dfa per cada estat inicial i una or al final. En aquest exemple, el primer DFA representa l'autòmata obtingut amb estat inicial 2, mentre que el segon DFA representa l'autòmata obtingut amb estat inicial 5.
 
 ## Exercise 14
 
 ![Exercise 14](./PNG/14.png)
 ```text
-
+main
+{
+  1 = "a";
+  2 = 1 1;
+  4 = 2 2;
+  6 = 2 4;
+  dfa = "2 4 6
+      0  p 1 p
+      1  p 2 3
+      2  4 0 p
+      3  0 p p
+      4  p 3 p +
+      p  p p p ";
+  
+  output substitution(dfa, "2" -> 2, "4" -> 4, "6" -> 6);
+}
 ```
+Es podria mirar tots els cicles i fer-ho a mà, però és més fàcil fer el DFA.
 
 
 ## Exercise 15
 
 ![Exercise 15](./PNG/15.png)
 ```text
-
+main
+{
+  a = "a";
+  3 = a a a;
+  4 = 3 a;
+  5 = 4 a;
+  7 = 5 a a;
+  9 = 7 a a;
+  
+  DFA = "3 4 5 7 9
+      0  p 2 p 1 p
+      1  p p p 1 3
+      2  5 4 p p p
+      3  p 0 p p p
+      4  3 p 2 p p
+      5  p p p p 4 +
+      p  p p p p p";
+  
+  output substitution(DFA, "3"-> 3, "4"-> 4, "5"-> 5, "7"-> 7, "9"-> 9);
+}
 ```
 
 
@@ -171,7 +359,24 @@ Fàcil oblidar el segon cas d'L1
 
 ![Exercise 16](./PNG/16.png)
 ```text
-
+main
+{
+  dfa = "1  2  3  4  5  6
+     0p  1s 2p p  p  p  p +
+     0s  1p 2s p  p  p  p
+     1p  p  p 2s 0p  p  p +	
+     1s  p  p 2p 0s  p  p
+     2p  p  p  p  p 1s 0p +
+     2s  p  p  p  p 1p 0s 
+     p   p  p  p  p  p  p ";
+  
+  output substitution(dfa,"1"->"aba",
+		      	  "2"->"bb",
+		          "3"->"b",
+		          "4"->"a",
+		          "5"->"a",
+		          "6"->"bbba");
+}
 ```
 
 
@@ -179,7 +384,18 @@ Fàcil oblidar el segon cas d'L1
 
 ![Exercise 17](./PNG/17.png)
 ```text
-
+main
+{
+   L ="    a  b	 c   d
+	A0 p  1	 A1  p
+	A1 p AB	 AA  p
+	1  p A1	 p   1
+	AA p AB	 AA  p +
+	AB p A1	 p   1 +
+	p  p p	 p   p";
+  
+    output substitution(L, "c" -> "aba", "d" -> "aa");
+}
 ```
 
 
@@ -187,8 +403,26 @@ Fàcil oblidar el segon cas d'L1
 
 ![Exercise 18](./PNG/18.png)
 ```text
-
+main
+{
+  
+  0 = "0";
+  1 = "1";
+  t = 0 | 1;
+  
+  output (0 0 | 1 1)* (1 0)  (t t)*;
+}
 ```
+```
+Intercalar és, per exemple, si tenim *w1* i *w2*:
+- w1 = abc
+- w2 = def
+La intercalació seria 
+- adbecf
+```
+En aquest exercici en concret, si volem tenir *w1 > w2*, cal mantenir els mateixos ('00' o '11') fins que que hi hagi un *1* a *w1* i un *0* a *w2*, seguint un format binari
+
+
 
 
 <!-- to finish -->
