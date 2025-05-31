@@ -1,0 +1,18 @@
+- DFA 
+    - Afegir comentaris   
+- CFG 
+    - Fotos + text + Comentaris
+- RegExpr
+    - Fotos + text + Comentaris
+- PDA
+    - Fotos + Comentaris
+
+Reduccions
+
+- K 
+    - Fotos + text + Comentaris
+- WP
+    - Fotos + text + Comentaris
+
+- CFG
+    - Fotos + text + Comentaris
