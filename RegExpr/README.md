@@ -445,15 +445,87 @@ main
   0 = "0";
   1 = "1";
   t = 0|1;
+  igual = 0 0 0 | 1 1 1; 
   all = 0 0 0 | 0 0 1 | 0 1 0 | 0 1 1 | 1 0 0 | 1 0 1 | 1 1 0 | 1 1 1;
   
-  output (0 0 0 | 1 1 1)* 1 1 0 ((0 0 | 1 1) t )* (1 0 t) all* |
-         (0 0 0 | 1 1 1)* 1 0 0 (t  (0 0 | 1 1))* (t 1 0) all*;
+  output igual* 
+        (
+        1 1 0 ((0 0 | 1 1) t )* (1 0 t) 
+        |
+        1 0 0 (t  (0 0 | 1 1))* (t 1 0)) 
+        all*;
 }
 ```
 Aquest es com el 18, però enlloc de tenir parelles de bits anirem de 3 en 3. Si volem tenir *w1 > w2 > w3 *, tindrem dos casos generals:
 - Si comença amb "110", seguit d'empats entre *w1 i w2* ((0 0 | 1 1) (0 | 1))*, fins que finalment amb (1 0 (0|1)*) acabem amb *w1 > w2*.
 - Si comença amb "100", seguit d'empats entre *w2 i w3* (t  (0 0 | 1 1))*, acabant amb ((0|1)* 1 0), garantint *w2 > w3*.
 
+## Exercise 21
 
-<!-- to finish -->
+![Exercise 21](./PNG/21.png)
+```text
+main
+{
+  0 = "0";
+  1 = "1";
+  t = 0|1;
+  igual = 0 0 0 | 1 1 1; 
+  all = 0 0 0 | 0 0 1 | 0 1 0 | 0 1 1 | 1 0 0 | 1 0 1 | 1 1 0 | 1 1 1;
+  
+  output igual*
+         ( 
+         1 0 0 (t (0 0 | 1 1))* t 0 1	
+         | 
+         0 0 1 ((0 0 | 1 1) t)* 1 0 t
+         |
+         1 0 1	 
+         )
+         all*;
+}
+```
+Aquí tinc 3 casos:
+  - 1 0 0 (t (0 0 | 1 1))* t 0 1:	 Primer es veu que *w1 > w2* i després *w2 < w3*
+  - 0 0 1 ((0 0 | 1 1) t)* 1 0 t:  Primer es veu que *w2 < w3* i després *w1 > w2*
+  - 1 0 1	                      :  Es veu directament que  *w1 > w2 < w3*
+
+
+## Exercise 22
+
+![Exercise 22](./PNG/22.png)
+```text
+main
+{
+  0 = "0";
+  1 = "1";
+  t = 0|1;
+  igual = 0 0 | 1 1; 
+  all = 0 0 | 0 1 | 1 0 | 1 1;
+  
+  output igual* 1 0 ((all)* - (0 1)*); 	
+}
+```
+Aquí cal intercalar només *w1* i *w3*, hiha d'haver com a mínim una paraula *w2* entre aquestes dues.
+
+Primer llegeixo (1 0) per assegurar *w1 > w3*, i per tenir *w2* 'dins', necessito evitar llegir 01, ja que:
+
+- w = 1001 ⇒ w1 = 10 (2 en decimal) i  w3 = 01 (1 en decimal), no existeix un altre nombre *w2*  tal que *w1 > w2 > w3*
+
+## Exercise 23
+
+![Exercise 23](./PNG/23.png)
+```text
+main
+main
+{
+  1 = "1";
+  0 = "0";
+  igual = 0 0 0 | 1 0 1 | 0 1 1;
+
+  carry = 1 0 0 | 0 1 0 | 1 1 1;
+  igualCarry = (0 0 1) carry* (1 1 0);
+  
+  output (igual | igualCarry)*;
+}
+```
+Aquí utilitzem el cas evident *igual*, en que *w1 + w2 = w3* i afegim el 'carry'. Representa la suma quan *w1 + w2 = w3 +1*
+<!-- 23 incomplet : -->
