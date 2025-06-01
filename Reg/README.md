@@ -1,4 +1,4 @@
-# Regular Expressions
+# Reg
 <!-- 
 # Expressions regulars
 Tipus d'exercicis:
@@ -515,17 +515,43 @@ Primer llegeixo (1 0) per assegurar *w1 > w3*, i per tenir *w2* 'dins', necessit
 ![Exercise 23](./PNG/23.png)
 ```text
 main
-main
 {
   1 = "1";
   0 = "0";
-  igual = 0 0 0 | 1 0 1 | 0 1 1;
-
-  carry = 1 0 0 | 0 1 0 | 1 1 1;
-  igualCarry = (0 0 1) carry* (1 1 0);
+    
+  exacte = 0 0 0 | 1 0 1 | 0 1 1;
   
-  output (igual | igualCarry)*;
+  carry = 0 0 1 (1 0 0 | 0 1 0 | 1 1 1)* 1 1 0;
+  
+  output (exacte | carry)*;
 }
 ```
-Aquí utilitzem el cas evident *igual*, en que *w1 + w2 = w3* i afegim el 'carry'. Representa la suma quan *w1 + w2 = w3 +1*
-<!-- 23 incomplet : -->
+Suma binària intercalant *w1*, *w2*, *w3* tals que *w1 + w2 = w3*
+
+- exacte: sumes sense carry.
+
+- carry: suma amb acarreig (comença amb 001, propaga, tanca amb 110).
+
+## Exercise 24
+
+![Exercise 24](./PNG/24.png)
+```text
+main
+{
+  0 = "0";
+  1 = "1";
+  t = 0 | 1;
+  all = t t t t;
+ 
+  exacte = 0 0 0 t | 1 0 1 t | 0 1 1 t;
+
+  carry = 0 0 1 t (1 0 0 t | 0 1 0 t | 1 1 1 t)* 1 1 0 t;
+
+  suma = (exacte | carry)*;
+  
+  major = (t t 0 0 | t t 1 1)* (0 0 1 0 | 0 1 1 0 | 1 1 1 0 | 1 0 1 0) all*;
+  
+  output major & suma;
+}
+```
+La mateixa idea que abans usant una and per comprovar que *w3 > w4* (en binari).
