@@ -398,7 +398,6 @@ main
 }
 ```
 
-
 ## Exercise 18
 
 ![Exercise 18](./PNG/18.png)
@@ -420,9 +419,41 @@ Intercalar és, per exemple, si tenim *w1* i *w2*:
 La intercalació seria 
 - adbecf
 ```
-En aquest exercici en concret, si volem tenir *w1 > w2*, cal mantenir els mateixos ('00' o '11') fins que que hi hagi un *1* a *w1* i un *0* a *w2*, seguint un format binari
+En aquest exercici en concret, si volem tenir *w1 > w2*, cal mantenir els mateixos ('00' o '11') fins que que hi hagi un *1* a *w1* i un *0* a *w2*, seguint un format binari.
 
+## Exercise 19
 
+![Exercise 19](./PNG/19.png)
+```text
+main
+{
+  0 = "0";
+  1 = "1";
+  t = 0 | 1;
+  
+  output (0 0 | 1 1)* (0 1)  (t t)*;
+}
+```
+Aquest exercici és el mateix que l'anterior però en lloc de *>* ens demanen *<*. Si volem tenir *w1 < w2*, cal mantenir els mateixos ('00' o '11') fins que que hi hagi un *0* a *w1* i un *1* a *w2*.
+
+## Exercise 20
+
+![Exercise 20](./PNG/20.png)
+```text
+main
+{
+  0 = "0";
+  1 = "1";
+  t = 0|1;
+  all = 0 0 0 | 0 0 1 | 0 1 0 | 0 1 1 | 1 0 0 | 1 0 1 | 1 1 0 | 1 1 1;
+  
+  output (0 0 0 | 1 1 1)* 1 1 0 ((0 0 | 1 1) t )* (1 0 t) all* |
+         (0 0 0 | 1 1 1)* 1 0 0 (t  (0 0 | 1 1))* (t 1 0) all*;
+}
+```
+Aquest es com el 18, però enlloc de tenir parelles de bits anirem de 3 en 3. Si volem tenir *w1 > w2 > w3 *, tindrem dos casos generals:
+- Si comença amb "110", seguit d'empats entre *w1 i w2* ((0 0 | 1 1) (0 | 1))*, fins que finalment amb (1 0 (0|1)*) acabem amb *w1 > w2*.
+- Si comença amb "100", seguit d'empats entre *w2 i w3* (t  (0 0 | 1 1))*, acabant amb ((0|1)* 1 0), garantint *w2 > w3*.
 
 
 <!-- to finish -->
