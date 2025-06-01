@@ -1,8 +1,5 @@
 |||||||||||||ESTUDI|||||||||||||||||||||
-    
 
-- RegExpr
-    - Fotos + text + Comentaris (Mateix format que K-Reduccions)
 - PDA
     - Fotos + Comentaris (Mateix format que DFA)
 
@@ -10,6 +7,9 @@
     - Fotos + text + Comentaris
 
 ALGUN EXÀMEN
+
+- RegExpr
+    - Mirar els últims exercicis, però potser no cal
 
 <!-- PUBLICAR REPO
 
