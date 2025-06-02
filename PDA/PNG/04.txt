@@ -1,4 +1,0 @@
-Aquí afegeixo els símbols X i Y que representen la primera a i la primera b llegida.
-(Si comença per a o per b, respectivament).
-
-Necessari per saber quan tenim el nombre d'a's i b's igual.
