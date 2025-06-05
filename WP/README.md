@@ -19,9 +19,8 @@ v
 l->r
 l->r
 ```
-```text
 Obtenim <u,v,R'>, on R' són les mateixes regles duplicades, ⇒ ∣R'∣ % 2 = 0.
-```
+
 ---
 
 ## Exercise 2
@@ -34,9 +33,7 @@ l->r
 l->r
 u->u
 ```
-```text
 Obtenim <u,v,R'>, on R' són les mateixes regles duplicades i la regla inútil u->u, ⇒ ∣R'∣ % 2 = 1. Perquè |l->r, l->r| és un nombre parell i |u->u| és senar.
-```
 
 ---
 
@@ -49,9 +46,8 @@ v
 l->i
 i->r
 ```
-```text
 Obtenim <u,v,R'>, on R' són les mateixes regles amb un pas intermig, és a dir, cada norma de reescriptura x -> y passa a ser x -> i, i -> y, on i és un identificador únic, pel que no tenim repeticions. Al afegir una regla extra per cada regla estem forçant que ∣R'∣ % 2 = 0.
-```
+
 ---
 
 ## Exercise 4
@@ -64,9 +60,9 @@ l->i
 i->r
 #->#
 ```
-```text
+
 Seguim la mateixa idea, forrçem que sigui parell i afegim una regla inútil.
-```
+
 ---
 
 ## Exercise 5
@@ -77,9 +73,9 @@ v
 l->r
 #l->#r
 ```
-```text
+
 Aquí la restricció ∣Σ∣≤3 no ens permet usar i, que assigna un idenfiticador nou a cada regla. Usem un caràcter nou `#` al prinicpi de les regles, pel que tenim |l->r, #l->#r|, que és un nombre parell.
-```
+
 ---
 
 ## Exercise 6
@@ -92,9 +88,8 @@ l->r
 #l->#r
 #->#
 ```
-```text
 El mateix, regles de mida parella (#l->#r) + regla més inútil (#->#) = regles de mida senar.
-```
+
 ---
 
 ## Exercise 7
@@ -109,9 +104,8 @@ s(v)
 s(l)->s(r)
 s(#l)->s(#r)
 ```
-```text
 Ara podem usar morfismes. Volem usar alguna cosa com (#l->#r), però sense usar #, ja que només podem tenir dos símbols.Hem triat aquest morfisme per evitar col·lisions entre cadenes.    
-```
+
 ---
 
 ## Exercise 8
@@ -138,14 +132,15 @@ v
 l->r
 u->u
 ```
-```text
-Cas positiu (u->*Rv)
-	 Si es parell no faig servir la regla nova |parell|
-	 Si es imparell faig servir la regla nova  |parell|
+
+- Cas positiu (u->*Rv)  
+  Si es parell no faig servir la regla nova |parell|  
+	Si es imparell faig servir la regla nova |parell|    
 	
- Cas negatiu (u no té camí fins a v)
-	No hi haurà cap camí parell
-```
+- Cas negatiu (u no té camí fins a v)
+  No hi haurà cap camí parell  
+
+
 ---
 
 ## Exercise 10
@@ -157,26 +152,22 @@ v
 l -> r 
 u -> u
 ```
-```text
 
-
-```
 ---
 
 ## Exercise 11
 
 ![Exercise 11](./PNG/11.png)
 ```text
-
-
+u
+v
+l -> i
+i -> r
 ```
-```text
+<!--
 
-
-```
 ---
-
-## Exercise 12
+ ## Exercise 12
 
 ![Exercise 12](./PNG/12.png)
 ```text
@@ -184,10 +175,7 @@ u -> u
 
 
 ```
-```text
 
-
-```
 ---
 
 ## Exercise 13
@@ -196,9 +184,7 @@ u -> u
 ```text
 
 ```
-```text
 
-```
 ---
 
 ## Exercise 14
@@ -207,9 +193,7 @@ u -> u
 ```text
 
 ```
-```text
 
-```
 ---
 
 ## Exercise 15
@@ -218,10 +202,7 @@ u -> u
 ```text
 
 ```
-```text
 
-
-```
 ---
 
 ## Exercise 16
@@ -231,11 +212,8 @@ u -> u
 
 
 ```
-```text
 
-
-```
----
+--- -->
 
 ## Exercise 17
 
@@ -244,26 +222,24 @@ u -> u
 u
 v
 # 
-l->r//Em permet u->v
+l->r
 v->#
 
 ```
-```text
+```
 #        = W
 l->r     Permet u->v
 v->#     Permet u→R∗​v→R∗w
 ```
 ---
 
-## Exercise 18
+<!-- ## Exercise 18
 
 ![Exercise 18](./PNG/18.png)
 ```text
 
 ```
-```text
 
-```
 ---
 
 ## Exercise 19
@@ -272,9 +248,7 @@ v->#     Permet u→R∗​v→R∗w
 ```text
 
 ```
-```text
 
-```
 ---
 
 ## Exercise 20
@@ -284,9 +258,7 @@ v->#     Permet u→R∗​v→R∗w
 
 
 ```
-```text
 
-```
 ---
 
 ## Exercise 21
@@ -295,9 +267,7 @@ v->#     Permet u→R∗​v→R∗w
 ```text
 
 ```
-```text
 
-```
 ---
 
 ## Exercise 22
@@ -306,9 +276,7 @@ v->#     Permet u→R∗​v→R∗w
 ```text
 
 ```
-```text
 
-```
 ---
 
 ## Exercise 23
@@ -317,9 +285,7 @@ v->#     Permet u→R∗​v→R∗w
 ```text
 
 ```
-```text
 
-```
 ---
 
 ## Exercise 24
@@ -328,9 +294,7 @@ v->#     Permet u→R∗​v→R∗w
 ```text
 
 ```
-```text
 
-```
 ---
 
 ## Exercise 25
@@ -339,9 +303,7 @@ v->#     Permet u→R∗​v→R∗w
 ```text
 
 ```
-```text
 
-```
 ---
 
 ## Exercise 26
@@ -350,9 +312,7 @@ v->#     Permet u→R∗​v→R∗w
 ```text
 
 ```
-```text
 
-```
 ---
 
 ## Exercise 27
@@ -361,9 +321,7 @@ v->#     Permet u→R∗​v→R∗w
 ```text
 
 ```
-```text
 
-```
 ---
 ## Exercise 28
 
@@ -371,7 +329,5 @@ v->#     Permet u→R∗​v→R∗w
 ```text
 
 ```
-```text
 
-```
----
+--- -->
