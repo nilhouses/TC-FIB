@@ -1,8 +1,5 @@
 |||||||||||||ESTUDI|||||||||||||||||||||
 
-- PDA
-    - Fotos + Comentaris (Mateix format que DFA)
-
 - WP
     - Fotos + text + Comentaris
 
@@ -13,17 +10,14 @@ ALGUN EXÀMEN
 
 <!-- PUBLICAR REPO
 
-ES PODRIA PENJAR ALGUNS EXÀMENS DELS QUE TINC, AMB/SENSE COMENTARIS -->
-||||||||||||||PARCIAL 1|||||||||||||||||||||
+    PUJAR EXAMENS FETS, SENSE Comentaris
+
 <!-- - DFA 
     - Afegir comentaris a les solucions (README) abans de fer repo públic  -->
-<!-- - CFG 
+<!-- - CFG Red
     - Fotos + text + Comentaris (Mateix format que K-Reduccions) -->  <- Cal actualització heavy, després d'exàmens
-|||||||||||||PARCIAL 2|||||||||||||||||||||
-    <!-- - K 
-    - Repassar abans de fer repo public -->
-||||||||||||||EXTRA|||||||||||||||||||||||||
 <!-- 
 - CFG
-    - Fotos + text + Comentaris
+    - Fotos + text + Comentaris-->
+<!-- 
 - Assignacions problemes Latex -->

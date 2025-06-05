@@ -19,13 +19,10 @@ input y
   accept;
 }
 ```
-```text
-
  Si x ∈ K, la màquina para i accepta per tot x
 
  Si x ∈ !K, la màquina no para per tot x
 
-```
 ---
 
 ## Exercise 2
@@ -39,13 +36,12 @@ input y
   accept;	
 }
 ```
-```text
+
 
  Si x ∈ K, la màquina para i accepta
  
  Si x ∈ !K, la màquina es queda penjada a l'infinite loop
 
-```
 
 ---
 
@@ -60,13 +56,11 @@ input y
 }
 
 ```
-```text
 
  Si x ∈ !K, llavors la màquina mai para
 
  Si x ∈ K, llavors la màquina sempre para
 
-```
 ---
 
 ## Exercise 4
@@ -80,15 +74,12 @@ input y
 }
 
 ```
-```text
-
  Aquesta màquina pot ser la mateixa que al 3, ja que al programar ∃ x ja havia fet ∀ x:
 
  Si x ∈ !K llavors la màquina mai para
 
  Si x ∈ K llavors la màquina sempre para
 
-```
 ---
 
 ## Exercise 5
@@ -103,13 +94,11 @@ input y
 }
 
 ```
-```text
 
- Si x ∈ !K llavors la màquina para i retorna y
+ Si x ∈ !K, la màquina para i retorna y
 
- Si x ∈ K llavors la màquina para i retorna y + 1
+ Si x ∈ K,  la màquina para i retorna y + 1
 
-```
 ---
 
 ## Exercise 6
@@ -124,17 +113,16 @@ input y
 }
 
 ```
-```text
+
 
 Tipus de funcions:
-  TOTAL -> Definida per tot el domini
-  INJECTIVA -> Tota imatge té una única antiimatge
+- TOTAL -> Definida per tot el domini
+- INJECTIVA -> Tota imatge té una única antiimatge
 
  Si x ∈ !K la màquina retorna y (injectiva)
 
  Si x ∈ K la màquina retorna 1 (no injectiva)
 
-```
 ---
 
 ## Exercise 7
@@ -149,7 +137,7 @@ input y
 }
 
 ```
-```text
+
 
  Si x ∈ !K la màquina retorna 1 (no injectiva)
 
@@ -166,7 +154,6 @@ Al cas negatiu (x ∈ K) cal anar amb compte, ja que si es fes output tindriem u
                  +-------------------
                          t          x
         
-```
 ---
 
 ## Exercise 8
@@ -181,18 +168,16 @@ input y
 }
 
 ```
-```text
 
- Si x ∈ !K la màquina 
-	acaba si y == 1 (accept)
-	no acaba si y == 2 (mxx no acaba)
+ Si x ∈ !K la màquina  <br />
+- acaba si y == 1 (accept)
+- no acaba si y == 2 (mxx no acaba)
 
 
- Si x ∈ K la màquina 
-	acaba si y == 1 (accept)
-	acaba si y == 2 (mxx acaba)
+ Si x ∈ K la màquina  <br />
+- acaba si y == 1 (accept)
+- acaba si y == 2 (mxx acaba)
 
-```
 ---
 
 ## Exercise 9
@@ -207,13 +192,11 @@ input y
 }
 
 ```
-```text
 
  Si x ∈ K la màquina té |Dom(φp)| = ∞
 
  Si x ∈ !K la màquina no para, pel que té |Dom(φp)| =  0
 
-```
 ---
 
 ## Exercise 10
@@ -229,13 +212,11 @@ input y
 }
 
 ```
-```text
 
  Si x ∈ !K la màquina no para, s'accepten els valors {1,2} ⇒ ∣Dom(φp)∣ = 2
 
  Si x ∈ K la màquina accepta tots els valors |Dom(φp)| = ∞ > 2
 
-```
 ---
 
 ## Exercise 11
@@ -250,13 +231,11 @@ input y
 }
 
 ```
-```text
 
  Si x ∈ K la màquina té |Im(φp​)| = ∞
 
  Si x !K la màquina té |Im(φp​)| = 0
 
-```
 ---
 
 ## Exercise 12
@@ -272,13 +251,11 @@ input y
 }
 
 ```
-```text
 
  Si x ∈ !K la màquina té imatge {0,1}, |Im(φp​)| = 2
 
  Si x ∈ K la màquina té d'imatge ℕ, |Im(φp​)| = ∞
 
-```
 ---
 
 ## Exercise 13
@@ -293,20 +270,19 @@ input y
 }
 
 ```
-```text
+
 Els parells i imparells tenen bastant sentit quan  es demanen conjunts infinits sense intersecció:
 
  Si x ∈ !K la màquina té ∣Dom(φp​)∣ = ∞, ∣Im(φp​)∣ = ∞ i Dom(φp​) ∩ Im(φp​) = ∅, ja que:
 
-    - Dom(φp​) = {x | x ∈ ℕ ∧ x % 2 = 0}
-    - Im(φp​) = {x | x ∈ ℕ ∧ x % 2 = 1}
+  - Dom(φp​) = {x | x ∈ ℕ ∧ x % 2 = 0}
+  - Im(φp​) = {x | x ∈ ℕ ∧ x % 2 = 1}
     
 
  Si x ∈ K la màquina té ∣Dom(φp​)∣ = ∞, ∣Im(φp​)∣ = ∞ i Dom(φp​) ∩ Im(φp​) = ∞, ja que:
 
-    - Dom(φp​) = Im(φp​) = {x | x ∈ ℕ }
+  - Dom(φp​) = Im(φp​) = {x | x ∈ ℕ }
 
-```
 ---
 
 ## Exercise 14
@@ -325,13 +301,11 @@ input y
 }
 
 ```
-```text
 
  Si x ∈ K les maquines paren, (∃x perquè es compleix ∀x)
 
  Si x ∈ !K la màquina p no para (!∃x)
 
-```
 ---
 
 ## Exercise 15
@@ -350,13 +324,11 @@ input y
 }
 
 ```
-```text
 
  Si x ∈ K les maquines paren, (∃x perquè es compleix ∀x)
 
  Si x ∈ !K la màquina q no para (!∃x)
 
-```
 ---
 
 ## Exercise 16
@@ -377,17 +349,13 @@ input y
 }
 
 ```
-```text
 
  Si x ∈ !K
-
-    Mp para (per y1 = 1) i Mq para (per y2 = 2)
+ -  Mp para (per y1 = 1) i Mq para (per y2 = 2)
 
  Si x ∈ K
+ - Mp para  Mq també  ∀ y
 
-    Mp para  Mq també  ∀ y
-
-```
 ---
 
 ## Exercise 17
@@ -408,13 +376,11 @@ input y
 }
 
 ```
-```text
 
  Si x ∈ K, les maquines tenen ℕ com a domini ⇒ |Dom(φp​) ∩ Dom(φq​)| >= 2
 
  Si x ∈ !K, les maquines tenen en comú {0} ⇒ |Dom(φp​) ∩ Dom(φq​)| = 1
 
-```
 ---
 
 ## Exercise 18
@@ -435,13 +401,11 @@ input y
 }
 
 ```
-```text
 
  Si x ∈ !K, les maquines tenen en comú {0,1} ⇒ |Dom(φp​) ∩ Dom(φq​)| = 2
 
  Si x ∈ K, les maquines tenen ℕ com a domini ⇒ |Dom(φp​) ∩ Dom(φq​)| >= 2
 
-```
 ---
 
 ## Exercise 19
@@ -464,11 +428,10 @@ input y
 }
 
 ```
-```text
 
-Si x ∈ !K, tenim {0} als dominis i imatges de les funcions, pel que:
+Si x ∈ !K, tenim {0} als dominis i imatges de les funcions, pel que: <br />
 
-  ∣Dom(φp​)∣ = ∣Dom(φq​)∣ = ∣Im(φp​)∣ = ∣Im(φq​)∣ = 1 ∧ ∣Dom(φp​) ∪ Dom(φq​) ∪ Im(φp​) ∪ Im(φq​)∣ = 1
+- ∣Dom(φp​)∣ = ∣Dom(φq​)∣ = ∣Im(φp​)∣ = ∣Im(φq​)∣ = 1 ∧ ∣Dom(φp​) ∪ Dom(φq​) ∪ Im(φp​) ∪ Im(φq​)∣ = 1
 
 Si x ∈ K, tenim:
  
@@ -476,7 +439,6 @@ Si x ∈ K, tenim:
 
 - Dom(φp​) = Dom(φq​) = ℕ  ⇒ |Dom(φp​)| = |Dom(φq​)| = ∞
 
-```
 ---
 
 ## Exercise 20
@@ -499,7 +461,6 @@ input y
 }
 
 ```
-```text
 
  Si x ∈ !K, tenim:
   - Dom(φp​) = Im(φp) = {0} 
@@ -512,7 +473,6 @@ input y
    - Im(φp) = {0,1}  ⇒ |Im(φp​)| = 2
    - Im(φq) = {1}  ⇒ |Im(φq​)| = 1
 
-```
 ---
 
 ## Exercise 21
@@ -535,7 +495,6 @@ input y
 }
 
 ```
-```text
 
  Si x ∈ !K, tenim:
   - Dom(φp) = {0}
@@ -554,8 +513,6 @@ input y
   - ∣Im(φp)∣ = 1
   - ∣Im(φq)∣ = 2
 
-
-```
 ---
 
 ## Exercise 22
@@ -578,7 +535,6 @@ input y
 }
 
 ```
-```text
 
  Si x ∈ !K, tenim:
   - Dom(φp) = {0}
@@ -597,7 +553,6 @@ input y
   - ∣Im(φp)∣ = 1
   - ∣Im(φq)∣ = 2
 
-```
 ---
 
 ## Exercise 23
@@ -621,7 +576,6 @@ input y
 }
 
 ```
-```text
 
  Si x ∈ !K, tenim:
   - Dom(φp) = Dom(φq) = {0} ⇒ Dom(φp​)⊆ Dom(φq​)
@@ -631,7 +585,6 @@ input y
   - Dom(φp) = ℕ
   - Dom(φq) = {0,1}  ⇒ Dom(φp​)⊈ Dom(φq​)
 
-```
 ---
 
 ## Exercise 24
@@ -654,7 +607,6 @@ input y
 }
 
 ```
-```text
 
  Si x ∈ !K, tenim:
   - Dom(φp) =  {0}
@@ -664,7 +616,6 @@ input y
   - Dom(φp) =  ℕ
   - Dom(φq​) = {0,1} ⇒ Dom(φp)⊄ Dom(φq)
 
-```
 ---
 
 ## Exercise 25
@@ -688,7 +639,6 @@ input y
 }
 
 ```
-```text
 
  Si x ∈ !K, tenim:
   - Dom(φp) = {2,...∞}
@@ -702,7 +652,6 @@ input y
   - Im(φp) = {0,...∞}
   Veiem, doncs, com Dom(φp) ⊂ Dom(φq) ⊄ Im(φp), ja que {2,...∞} ⊂ {0,...∞} ⊄ {0,...∞}
 
-```
 ---
 
 ## Exercise 26
@@ -723,7 +672,6 @@ input y
 }
 
 ```
-```text
 
  Si x ∈ !K, tenim: 
  - Dom(φp) = {x | x ∈ ℕ ∧ x % 2 = 1} ⇒ ∣Dom(φp​)∣ = ∞
@@ -736,7 +684,6 @@ input y
  Veiem, doncs, que:
   Dom(φp​)∩ Dom(φq​) = ℕ
 
-```
 ---
 
 ## Exercise 27
@@ -756,16 +703,16 @@ input y
 }
 
 ```
-```text
 Si x ∈ !K, tenim: 
  - Dom(φp) = {x | x ∈ ℕ ∧ x % 2 = 0} 
- - Dom(φq) = {x | x ∈ ℕ ∧ x % 2 = 1 ∧ x > 1}
- És a dir:
-  Dom(φp) = {0,2,4,6,...} 
-  Dom(φq) = {3,5,7,...}
-Per a qualsevol nombre natural y, si considerem la llista {0, ..., y}, sempre hi haurà com a mínim un element més a Dom(φp) que a Dom(φq). Això és perquè Dom(φp) inclou tots els parells començant pel 0, mentre que Dom(φq) només inclou els senars estrictament majors que 1 (és a dir, a partir de 3). Per tant, dins de qualsevol interval finit, Dom(φp) sempre tindrà més elements que Dom(φq).
+ - Dom(φq) = {x | x ∈ ℕ ∧ x % 2 = 1 ∧ x > 1}  <br />
+
+És a dir:
+ - Dom(φp) = {0,2,4,6,...} 
+ - Dom(φq) = {3,5,7,...}  <br />
+
+Per a qualsevol nombre natural *y*, si considerem la llista {0, ..., y}, sempre hi haurà com a mínim un element més a Dom(φp) que a Dom(φq). Això és perquè Dom(φp) inclou tots els parells començant pel 0, mentre que Dom(φq) només inclou els senars estrictament majors que 1 (és a dir, a partir de 3). Per tant, dins de qualsevol interval finit, Dom(φp) sempre tindrà més elements que Dom(φq).
 
  Si x ∈ K, tenim Dom(φp) = ∅ ⇒ ∣Dom(φp​)∣ = 0
 
-```
 ---

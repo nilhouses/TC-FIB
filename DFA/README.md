@@ -1,4 +1,4 @@
-# DFA
+# Deterministic finite automata (DFA)
 
 Amb aquesta llista veiem que cal veure si el DFA que em donen és unió o intersecció d'altres DFA's més petits. O si el negat és més facil que el que em donen, jja que simplifica bastant la feina.
 

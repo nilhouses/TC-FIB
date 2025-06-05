@@ -1,4 +1,4 @@
-# Reg
+# Regular Expressions (RegExpr)
 <!-- 
 # Expressions regulars
 Tipus d'exercicis:
@@ -30,7 +30,6 @@ main
 }
 ```
 
-
 ## Exercise 2
 
 ![Exercise 2](./PNG/02.png)
@@ -49,8 +48,6 @@ main
 }
 ```
 
-
-
 ## Exercise 3
 
 ![Exercise 3](./PNG/03.png)
@@ -68,9 +65,8 @@ main
  output L1 & L2;
 }
 ```
-
-
 Fàcil oblidar el segon cas d'L1
+
 ## Exercise 4
 
 ![Exercise 4](./PNG/04.png)
@@ -103,7 +99,6 @@ main
   output L1 & L2;
 }
 ```
-
 
 ## Exercise 6
 
@@ -162,15 +157,15 @@ main
 
 ![Exercise 8](./PNG/08.png)
 
-  ```
-  60 | 2
-  30 | 2
-  15 | 3
-   5 | 5
-   1
+
+  60 | 2  <br />
+  30 | 2  <br />
+  15 | 3  <br />
+   5 | 5  <br />
+   1      <br />
  
-  60 = 4 x 3 x 5
-  ```
+  60 = 4 x 3 x 5  <br />
+
 
 ```text
 main
@@ -412,13 +407,13 @@ main
   output (0 0 | 1 1)* (1 0)  (t t)*;
 }
 ```
-```
+
 Intercalar és, per exemple, si tenim *w1* i *w2*:
 - w1 = abc
 - w2 = def
 La intercalació seria 
 - adbecf
-```
+
 En aquest exercici en concret, si volem tenir *w1 > w2*, cal mantenir els mateixos ('00' o '11') fins que que hi hagi un *1* a *w1* i un *0* a *w2*, seguint un format binari.
 
 ## Exercise 19

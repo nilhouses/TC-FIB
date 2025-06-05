@@ -1,4 +1,5 @@
-# PDA
+# Pushdown automata (PDA)
+
 ### Deterministic
 - No hi ha ambigüitats: per a cada estat, símbol d’entrada i símbol de pila, hi ha una única transició possible.
 
