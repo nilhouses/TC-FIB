@@ -680,7 +680,7 @@ input y
   Dom(φp​) ∩ Dom(φq​) = ∅
 
  Si x ∈ K, tenim:
-  - Dom(φp) = Dom(φq) = ℕ ⇒ ∣Dom(φp​)∣ = ∣Dom(φp​)| = ∞
+  - Dom(φp) = Dom(φq) = ℕ ⇒ ∣Dom(φp​)∣ = ∣Dom(φq​)| = ∞
  Veiem, doncs, que:
   Dom(φp​)∩ Dom(φq​) = ℕ
 
