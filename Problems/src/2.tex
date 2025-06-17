@@ -1,0 +1,76 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[catalan]{babel}
+\usepackage{amsmath, amssymb}
+\usepackage{parskip}
+\usepackage[left=2.5cm, right=2.5cm, top=2cm, bottom=2cm]{geometry}
+\usepackage{tcolorbox} %rectangle
+\usepackage{listings} % Per a la visualització de codi
+
+% Configuració del paquet listings
+% Una configuració per un pseudo-codi més genèric
+% Permet que les ordres matemàtiques dins de $...$ es renderitzin.
+\lstdefinestyle{pseudocode}{
+    basicstyle=\ttfamily\small,
+    numbers=left,
+    numberstyle=\tiny\color{gray},
+    stepnumber=1,
+    numbersep=5pt,
+    showstringspaces=false,
+    tabsize=4,
+    breaklines=true,
+    % captionpos=b, % Aquesta línia ja no és necessària si no hi ha caption
+    frame=single,
+    breakatwhitespace=false,
+    mathescape=true, % AQUEST ÉS CLAU! Permet expressions matemàtiques amb $...$
+    morekeywords={for, in, if, not, return, new, while} % Paraules clau
+}
+
+
+\begin{document}
+
+\section*{\small 2.20 Disenya un algorisme de cost raonable per trobar els
+estats no accesibles d'un DFA d'entrada.}
+
+Sigui $D = (Q, \Sigma, \delta, q_0, F )$ el DFA d'entrada, on:
+\begin{itemize}
+    \item $Q$, conjunt d'estats
+    \item $\Sigma$, alfabet
+    \item $\delta : Q \times \Sigma \to Q$, funció de transició
+    \item $q_0$, estat inicial
+    \item $F$, conjunt d'estats finals (o acceptadors)
+\end{itemize}
+
+\subsection*{\small Algorisme}
+\begin{lstlisting}[style=pseudocode] % Hem eliminat 'caption=Algorisme per trobar estats no accessibles'
+A = {$q_0$}
+c = new Queue<>();
+c.push($q_0$);
+while (not c.empty()) {
+    q = c.pop();
+    for (s in $\Sigma$) {
+        $q'$ = $\delta(q, s)$;
+        if ($q' \notin A$) {
+            A = A $\cup$ {$q'$};
+            c.push($q'$);
+        }
+    }
+}
+return $Q \setminus A$
+\end{lstlisting}
+
+L'algorisme utilitza en un $BFS$ per trobar els estats accessibles i retornar els no accessibles.
+
+\subsection*{\small Cost}
+
+El cost serà el d'executar un $BFS$ al graf de l'autòmat, que té $|Q|$ nodes (o estats) i $|Q| \cdot |\Sigma|$ arestes (o transicions):
+\[
+O(D) = O(|Q| + |Q| \cdot |\Sigma|) \in O(|Q| \cdot |\Sigma|)
+\]
+\:
+\begin{tcolorbox}
+L'algorisme es podria millorar usant heurístiques o poda.
+\end{tcolorbox}
+
+\end{document}
