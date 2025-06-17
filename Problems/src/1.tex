@@ -1,0 +1,90 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[catalan]{babel}
+\usepackage{amsmath, amssymb}
+\usepackage{parskip}
+\usepackage[left=2.5cm, right=2.5cm, top=2cm, bottom=2cm]{geometry}
+\usepackage{tcolorbox} %rectangle
+
+\begin{document}
+
+\section*{1.3 Argumenteu si són certes (amb una justificació) o falses (amb un contraexemple) les següents afirmacions en general}
+
+\textbf{t) $L = L^2 \implies (L = L^*) \vee (L = \emptyset)$}
+
+Certa. Demostrem-ho per inducció:
+
+Volem demostrar que $L^n = L$ per a tot $n \geq 1$.
+
+\begin{itemize}
+    \item \textbf{Cas base ($n = 1$):} $L^1 = L$
+    \item \textbf{Pas inductiu:} Suposem com hipòtesi d'inducció (HI) que $L^k = L$ per a algun $k \geq 1$. Aleshores:
+    \[
+    L^{k+1} = L^k \cdot L \overset{\text{HI}}{=} L \cdot L = L^2 = L
+    \]
+    Per tant, per inducció, $L^n = L$ per a tot $n \geq 1$.
+\end{itemize}
+
+Llavors:
+\[
+L^* = \bigcup_{n=0}^{\infty} L^n = L^0 \cup \bigcup_{n=1}^{\infty} L = \{\lambda\} \cup L
+\]
+
+Distingim dos casos principals:
+
+\begin{itemize}
+    \item \textbf{Cas 1:  $\lambda \in L$}:  
+    Aleshores $\{\lambda\} \subseteq L$, i com hem demostrat que $L^n = L$ per a tot $n \geq 1$, tenim que
+    \[
+    L^* = L^0 \cup L^1 \cup L^2 \cup \dots = \{\lambda\} \cup L \cup L \cup \dots = L
+    \]
+    Per tant, $ L = L^* $.
+
+    \item \textbf{Cas 2: $\lambda \notin L$}:
+\[
+\lambda \notin  L \wedge L^* = \{\lambda\} \cup L   \implies \{\lambda\} \subseteq L^* \implies L \neq L^* 
+\]
+
+Per tal que la conclusió $(L = L^*) \vee (L = \emptyset)$ sigui certa, i sabent que $L \neq L^* $, ha de ser que $L = \emptyset$. Comprovem, doncs,  si $L = \emptyset$ és consistent amb la nostra suposició inicial $L = L^2$ i $\lambda \notin L$.
+
+\[
+ L = \emptyset \implies \lambda \notin L \wedge L^2 = \emptyset \cdot \emptyset = \emptyset  \implies L = L^2
+ \]
+
+En resum,  $\lambda \notin L \implies L = \emptyset$ 
+\end {itemize}
+
+Així doncs, hem demostrat que:
+
+\[
+L = L^2 \Rightarrow (L = L^*) \vee (L = \emptyset)
+\]
+\begin{tcolorbox}
+\textbf{NOTA:} Aquest exercici també es pot demostrar elegantment usant les propietats dels apartats \textbf{s)} i \textbf{q)}:
+\begin{itemize}
+    \item \textbf{s)} $ \lambda \in L \wedge L^2 \subseteq L \iff L = L^* $
+    \item \textbf{q)} $ L \subseteq L^2 \iff \lambda \in L \vee L = \emptyset $
+\end{itemize}
+
+Com que $L = L^2$, aleshores $L \subseteq L^2$, i per la propietat \textbf{q)} se'n dedueix que:
+\[
+\lambda \in L \vee L = \emptyset
+\]
+
+En el primer cas, si \( \lambda \in L \), com que \( L = L^2 \), aleshores \( L^2 \subseteq L \), i per tant:
+\[
+\lambda \in L \wedge L^2 \subseteq L \overset{\text{s)}}{\Rightarrow} L = L^*
+\]
+
+En el segon cas, si \( L = \emptyset \), també es compleix la propietat.
+
+Així, es conclou que:
+\[
+L = L^2 \Rightarrow (L = L^*) \vee (L = \emptyset)
+\]
+\end{tcolorbox}
+
+
+
+\end{document}
