@@ -446,6 +446,7 @@ Casos:
 - Z: |w|<sub>c</sub> = 1 ∧ w = xcy, x != y
 - T: |w|<sub>c</sub> = 1 ∧ w = xcy, ∃ i tq x[i] != y[i]
 Z i T es complementen, cap de les dues cobreix tots els casos tal i com està implementat.
+
 ---
 
 ## Exercise 43
@@ -491,7 +492,6 @@ Z -> aZd | BC
 B -> bB |
 C -> cC |
 D -> dD |
-
 ```
 Casos:
 - X: |w|<sub>a</sub> =  |w|<sub>b</sub> 
