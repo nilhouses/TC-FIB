@@ -1,4 +1,4 @@
-# Context-Free Grammar (CFG)
+# Context-Free Grammars (CFG)
 
 ## Exercise 1
 
@@ -24,6 +24,8 @@ S -> AB
 A -> aA |
 B -> aBb |
 ```
+A i B eviten ambigüitats.
+
 ---
 
 ## Exercise 4

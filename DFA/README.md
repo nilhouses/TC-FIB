@@ -123,10 +123,9 @@ El mateix que el 12 (a primera vista) però en lloc de descartar 1a2b cal descar
 
 ![Exercise 17](./PNG/17.png)
 ![Exercise 17](./PNG/17_1.png)
-```text
-Aquest es l'intersecció de varis DFA's. Es poden obtenir els 3 DFA simples i calcular-ne l'intersecció. Sense minimitzar són 4*4*4 = 64 estats en total
 
-```
+Intersecció de varis DFAs. Es poden obtenir els 3 DFAs simples i calcular-ne l'intersecció. Sense minimitzar són 4*4*4 = 64 estats en total.
+
 ---
 
 ## Exercise 18
@@ -155,7 +154,7 @@ Múltiples de 2 (acabats en 0) i mot buit.
 
 ![Exercise 21](./PNG/21.png)
 
-Múltiple de 3, 3 estats:
+Múltiples de 3, 3 estats:
 	x0 = 2x
 	x1 = 2x+1
 Llegir un 0 és multiplicar per 2 en binari, llegir un 1 és multiplicar per 2 i sumar 1.
@@ -174,7 +173,7 @@ Invertir els estats finals i no finals del DFA anterior.
 
 ![Exercise 23](./PNG/23.png)
 
-Múltiple de 4. La part interessant és veure que l'estat 3 és prescindible al ser equivalent amb l'estat 1.
+Múltiples de 4. L'estat 3 és prescindible al ser equivalent amb l'estat 1.
 
 ---
 
@@ -182,7 +181,7 @@ Múltiple de 4. La part interessant és veure que l'estat 3 és prescindible al 
 
 ![Exercise 24](./PNG/24.png)
 
-El mateix que el 23 però negant estats acceptadors.
+Invertir els estats finals i no finals del DFA anterior.
 
 ---
 
@@ -190,8 +189,7 @@ El mateix que el 23 però negant estats acceptadors.
 
 ![Exercise 25](./PNG/25.png)
 
-
-Múltiples de 5, aquí s'usen tots els estats, a diferència dels múltiples de 4.
+Múltiples de 5.
 
 ---
 
@@ -298,7 +296,7 @@ Conté alguna seqüència amb 3 b més que a.
 
 ![Exercise 38](./PNG/38.png)
 
-Ara el nombre el mot ha de tenir el mateix nombre d'as i b's a les dues parts. Si et fixes, al final pots fer de tot:
+Ara el nombre el mot ha de tenir el mateix nombre d'as i b's a les dues parts:
 
 	λ 	accepta
 	|a	accepta
@@ -309,6 +307,7 @@ Ara el nombre el mot ha de tenir el mateix nombre d'as i b's a les dues parts. S
 	|aa	accepta	
 	|aaa	accepta
 	...
+Sempre es podrà trobar una descomposició xy d'un mot w de manera que |x|<sub>a</sub> = |y|<sub>b</sub>.
 
 ---
 

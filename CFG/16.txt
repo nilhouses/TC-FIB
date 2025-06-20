@@ -1,5 +1,0 @@
-Non-ambiguous CFG for {w∈{a,b}∗∣w=wR}{w∈{a,b}∗∣w=wR}
-
-		Faàcil, però no oblidar a i b soles
-
-		S -> aSa | bSb | a | b | 

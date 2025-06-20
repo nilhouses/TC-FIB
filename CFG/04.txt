@@ -1,8 +1,0 @@
-Non-ambiguous CFG for {aibj∣i≤j}{aibj∣i≤j}
-
-	Aquest es el mateix que l'anterior però canvies els símbols a i b
-
-	S -> AB
-	A -> aAb |
-	B -> bB |
-

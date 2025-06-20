@@ -1,7 +1,0 @@
-Non-ambiguous CFG for {aibj∣i≥j∨i≤2j}{aibj∣i≥j∨i≤2j}
-
-És a dir b <= a <= 2b. Podem veure com és qualsevol,  combinació, és una trampa:
-
-	S -> AB
-	A -> aA |
-	B -> bB |

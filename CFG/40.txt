@@ -1,6 +1,0 @@
- Exercise ‹40›: Non-ambiguous CFG for the complement of {w∈{a,b}∗∣w=wR}{w∈{a,b}∗∣w=wR}
-Write a non-ambiguous CFG generating the language of words over {a,b}{a,b} that are not palindromic.
-
-
-la idea es generar mots que son palíndroms fins 
-que es trenca aquesta simetria, quan es trenca llavors genero mots qualsevols.

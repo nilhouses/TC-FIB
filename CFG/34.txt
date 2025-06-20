@@ -1,3 +1,0 @@
-Non-ambiguous CFG for {xcy∣x,y∈{a,b}∗∧∣x∣aba=∣y∣bab}{xcy∣x,y∈{a,b}∗∧∣x∣aba​=∣y∣bab​}
-
-Sembla molt semblant a l'anterior, però es complica, ME'L SALTO

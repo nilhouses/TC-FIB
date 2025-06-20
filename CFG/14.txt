@@ -1,9 +1,0 @@
-Non-ambiguous CFG for {an0ban1b…anm−1banm∣m≥1∧(n0=∑1≤i≤mni)}{an0​ban1​b…anm−1​banm​∣m≥1∧(n0​=∑1≤i≤m​ni​)}
-Write a non-ambiguous CFG generating the words of the form an0ban1b…anm−1banman0​ban1​b…anm−1​banm​, with m≥1m≥1, such that n0n0​ is equal to the sum n1+n2+…+nmn1​+n2​+…+nm​.
-
-Semblant al 13, son mots que tenen no = n1+...+nm 
-i hi ha almenys una b:
-
-S -> aSa | Sb | b
-
-Confús, necessites Sb io no bS perquè estàs controlant les a's al principi
