@@ -65,7 +65,6 @@ main
  output L1 & L2;
 }
 ```
-Fàcil oblidar el segon cas d'L1
 
 ## Exercise 4
 
@@ -84,7 +83,6 @@ main
  output L1 & L2;
 }
 ```
-Mateixa idea que el 3
 
 ## Exercise 5
 
@@ -120,14 +118,6 @@ main
 }
 ```
 
-Els múltiples de 12 també són múltiples de 3 i de 4, ja que 12 es pot descompondre en factors primers (12 = 3 × 4). 
-
-En lloc d'un DFA, es podria construir una expressió regular, com per exemple:
-
-```text
-  m4 = ("0"|"1")* "00" | "" | "0";
-```
-
 
 ## Exercise 7
 
@@ -151,22 +141,16 @@ main
   output m4 & m5;
 }
 ```
+    12 | 2
+     6 | 2
+     3 | 3
+     1 |
 
+12 = 2 x 2 x 3 = 4 x 3 <br />
 
 ## Exercise 8
 
 ![Exercise 8](./PNG/08.png)
-
-
-  60 | 2  <br />
-  30 | 2  <br />
-  15 | 3  <br />
-   5 | 5  <br />
-   1      <br />
- 
-  60 = 4 x 3 x 5  <br />
-
-
 ```text
 main
 { 
@@ -189,6 +173,14 @@ main
   output m3 & m4 & m5;
 }
 ```
+
+    60 | 2
+    30 | 2
+    15 | 3
+     5 | 5
+     1 |
+ 
+  60 = 2 x 2 x 3 x 5 = 4 x 3 x 5  <br />
 
 ## Exercise 9
 
@@ -242,7 +234,6 @@ main
 }
 ```
 
-
 ## Exercise 12
 
 ![Exercise 12](./PNG/12.png)
@@ -262,10 +253,6 @@ main
   output substitution(dfa, "c" -> "a", "d" -> "b");
 }
 ```
-
-  La idea és representar el DFA utilitzant morfismes. Primer es construeix el DFA amb altres símbols (com c i d) que representen les transicions dels símbols a i b, incloent-hi les transicions no definides.
-
-
 
 ## Exercise 13
 
@@ -297,7 +284,7 @@ main
  output dfa | dfa2;
 }
 ```
-Per representar dos estats inicials es pot fer un dfa per cada estat inicial i una or al final. En aquest exemple, el primer DFA representa l'autòmata obtingut amb estat inicial 2, mentre que el segon DFA representa l'autòmata obtingut amb estat inicial 5.
+Es fa un dfa per cada estat inicial.
 
 ## Exercise 14
 
@@ -320,8 +307,6 @@ main
   output substitution(dfa, "2" -> 2, "4" -> 4, "6" -> 6);
 }
 ```
-Es podria mirar tots els cicles i fer-ho a mà, però és més fàcil fer el DFA.
-
 
 ## Exercise 15
 
@@ -348,7 +333,6 @@ main
   output substitution(DFA, "3"-> 3, "4"-> 4, "5"-> 5, "7"-> 7, "9"-> 9);
 }
 ```
-
 
 ## Exercise 16
 
@@ -408,10 +392,10 @@ main
 }
 ```
 
-Intercalar és, per exemple, si tenim *w1* i *w2*:
+"Intercalar" -> Donat *w1* i *w2*:
 - w1 = abc
 - w2 = def
-La intercalació seria 
+La intercalació seria: 
 - adbecf
 
 En aquest exercici en concret, si volem tenir *w1 > w2*, cal mantenir els mateixos ('00' o '11') fins que que hi hagi un *1* a *w1* i un *0* a *w2*, seguint un format binari.
