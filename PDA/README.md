@@ -19,6 +19,7 @@ Empilo una A quan llegeixo una a i desempilo la A quan llegeixo una b, és un ma
 ![Exercise 2](./PNG/02.png)
 
 La mateixa idea, però quan llegeixo una B borro dues a's, per mantenir êl doble d'as que de b's.
+
 ---
 
 ## Exercise 3
