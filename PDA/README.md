@@ -117,7 +117,7 @@ La idea es separar per exponents. Tenim:
 
 	a(i) b(i) b(k) c(k)
 
-Llegeixo, doncs, 4 grups diferents. Faig un estat intermediamb |a|=|b| per si de cas no tinguessim c's
+Llegeixo, doncs, 4 grups diferents. Faig un estat intermedi amb |a|=|b| per si de cas no tinguessim c's
 
 ---
 
